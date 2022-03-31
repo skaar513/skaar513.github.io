@@ -126,6 +126,6 @@ hr {
 }
 
 ::selection {
-  color: red;
-  background: yellow;
+  color: #171B25;
+  background: #82D5EF;
 }
