@@ -125,3 +125,7 @@ hr {
 	color: #82D5EF;
 }
 
+::selection {
+  color: red;
+  background: yellow;
+}
