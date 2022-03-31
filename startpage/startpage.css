@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Outfit");
+
+body {
+	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB);
+	line-height: 1.55em;
+}
+
+.container {
+	background: #171B25;
+	padding: 4% 5% 4% 5%;
+	width: 50%;
+	margin: auto;
+	margin-top: 10%;
+	border: 5px solid #222835;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+}
+
+.searchcontainer {
+	display: flex;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+}
+
+.searchbox {
+	width: 100%;
+	background: #222835;
+	font: normal normal 19px "Outfit", sans-serif;
+	border: 0px solid yellow;
+	border-radius: 0 4px 4px 0;
+	padding: 0.5em;
+	color: #E4E4E4;
+}
+
+.searchbox:hover {
+}
+
+.searchbox:focus {
+	border: 0px solid blue;
+	outline: none;
+	border-radius: 4px;
+	color: #E4E4E4;
+}
+.searchbutton {
+	width: 4em;
+	border: 0 solid pink;
+	border-radius: 4px 0 0 4px;
+	background: #F7AEB7;
+	font: normal bold 24px "Oswald", sans-serif;
+	padding: 0.25em;
+}
+
+.subcontainer {
+	border: 0px solid red;
+	font: normal normal 20px "Outfit", sans-serif;
+	display: flex;
+}
+
+.docs, .code, .learn {
+	width: 33%;
+	border: 0px solid yellow;
+}
+.docs {
+	color: #FBE091;
+}
+.code {
+	color: #8AE29D/*#FC8A94*/;
+}
+.learn {
+	color: #A8BEFB;
+}
+
+a {
+	color: #E4E4E4;
+	transition: color 0.125s ease-in-out 0s;
+	text-decoration: none;
+}
+a:hover {
+	color: #FC8A94;
+	text-decoration: underline;
+}
+
+::selection {
+  color: #171B25;
+  background: rgba(239,239,239,0.85);/*#EFEFEF;
+}

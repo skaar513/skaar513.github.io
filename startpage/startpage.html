@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+	<title>Startpage</title>
+	<meta charset=UTF-8>
+	<link rel=icon href=../nixos.svg>
+	<link rel=stylesheet href=startpage.css>
+</head>
+
+<body>
+<div class=container>
+
+	<div align=center class=searchcontainer>
+		<button class=searchbutton>Search</button>
+		<input align=center class=searchbox type=text id=searchengine autocomplete=off placeholder="with searX.be">
+	</div>
+
+	<div class=subcontainer align=center>
+		<div class=docs>
+		<h2>docs</h2>
+		<a href=https://nixos.org>nixos</a><br>
+		<a href=https://gnu.org>gnu</a>
+		</div>
+
+		<div class=code align=center>
+		<h2>code</h2>
+		<a href=https://github.com/skaar513?tab=repositories>repos</a><br>
+		<a href=https://skaar513.github.io>movies</a>
+		</div>
+
+		<div class=learn align=center>
+		<h2>learn</h2>
+		<a href=https://lukesmith.xyz/blog>blog</a>
+		</div>
+	</div>
+</div>
+<script>
+	document.getElementById("searchengine").addEventListener("keydown", event =>
+			{ if (event.keyCode == 13)
+				{ var pVal = document.getElementById("searchengine").value; window.open("https://searx.be/search?q=" + pVal, "_self");}});
+</script>
+</body>
+</html>
