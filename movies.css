@@ -127,5 +127,5 @@ hr {
 
 ::selection {
   color: #171B25;
-  background: #EFEFEF/*#82D5EF*/;
+  background: rgba(239,239,239,0.85);/*#EFEFEF;
 }
