@@ -3,6 +3,9 @@ A simple webpage listing out some good and pointful movies that I have seen (or 
 <p><a href=https://skaar513.github.io>skaar513.github.io</a></p>
 Any suggetion for the page, or additions to the list itself, would be greatly appreciated
 
+## Issues
+The background doesn't load properly when the webpage is not as long as the height of the device
+
 ## References
 I took some help from 
 <a href=https://w3schools.com/css>w3schools</a>, 
