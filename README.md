@@ -1,6 +1,7 @@
 # Movies Webpage
 A list of some good and meaningful movies that I have seen (or will see).
 <p><a href=https://skaar513.github.io>skaar513.github.io</a></p>
+Any suggetion for the page, or additions to the list itself, would be greatly appreciated
 
 ## References
 I took some help from 
