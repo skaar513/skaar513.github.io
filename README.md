@@ -1,5 +1,5 @@
 # Movies Webpage
-A simple webpage listing out some good and meaningful movies that I have seen (or will see).
+A simple webpage listing out some good and pointful movies that I have seen (or will see).
 <p><a href=https://skaar513.github.io>skaar513.github.io</a></p>
 Any suggetion for the page, or additions to the list itself, would be greatly appreciated
 
