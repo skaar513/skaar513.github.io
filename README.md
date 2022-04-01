@@ -8,8 +8,8 @@ Any suggetion for the page, or additions to the list itself, would be greatly ap
 - <a href=https://skaar513.github.io/startpage/startpage>startpage</a>
 
 ## Issues
-The background doesn't load properly when the webpage is not as long as the height of the device. <br>
-The heading font does not render properly on firefox forks (atleast out of the box).
+<p>1. The background doesn't load properly when the webpage is not as long as the height of the device. </p
+<p>2. The heading font does not render properly on firefox forks (atleast out of the box). </p>
 
 ## References
 Some help from 
