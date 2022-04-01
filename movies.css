@@ -23,13 +23,13 @@ body {
 	border-radius: 0.18em 0px 0px 0.18em;
 	color: #171B25;
 	width: 4.77em;
-	padding: 1.5%;
+	padding: 0.3125em;
 	font: normal bold 32px "Oswald", sans-serif;
 }
 
 .watchlistsubheading {
 	font: normal normal 25px "Oswald", sans-serif;
-	padding: 1%;
+	padding: 0.28em;
 	border-radius: 5px 0 0 5px;
 	background: #8AE29D;
 	color: #171B25;
