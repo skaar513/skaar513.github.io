@@ -31,9 +31,6 @@ body {
 	color: #E4E4E4;
 }
 
-.searchbox:hover {
-}
-
 .searchbox:focus {
 	border: 0px solid blue;
 	outline: none;
@@ -47,6 +44,10 @@ body {
 	background: #F7AEB7;
 	font: normal bold 24px "Oswald", sans-serif;
 	padding: 0.25em;
+	transition: background 0.125s ease-in-out 0s;
+}
+.searchbutton:hover {
+	background: #FC8A94;
 }
 
 .subcontainer {
@@ -63,7 +64,7 @@ body {
 	color: #FBE091;
 }
 .code {
-	color: #8AE29D/*#FC8A94*/;
+	color: #8AE29D;
 }
 .learn {
 	color: #A8BEFB;
@@ -81,5 +82,5 @@ a:hover {
 
 ::selection {
   color: #171B25;
-  background: rgba(239,239,239,0.85);/*#EFEFEF;
+  background: rgba(239,239,239,0.85);
 }
