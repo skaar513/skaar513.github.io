@@ -12,15 +12,16 @@
 <div class=container>
 
 	<div align=center class=searchcontainer>
-		<button class=searchbutton>Search</button>
-		<input align=center class=searchbox type=text id=searchengine autocomplete=off placeholder="with searX.be">
+		<button class=searchbutton onclick="search()">Search</button>
+		<input align=center class=searchbox type=text id=searchengine autocomplete=off autofocus placeholder="with searX.be">
 	</div>
 
 	<div class=subcontainer align=center>
 		<div class=docs>
 		<h2>docs</h2>
-		<a href=https://nixos.org>nixos</a><br>
-		<a href=https://gnu.org>gnu</a>
+		<a href=https://nixos.org/manual/nixos/unstable/>nixos</a><br>
+		<a href=https://www.gnu.org/software/bash/manual/bash.html>bash</a><br>
+		<a href=https://searx.github.io/searx/>searx</a>
 		</div>
 
 		<div class=code align=center>
@@ -35,10 +36,25 @@
 		</div>
 	</div>
 </div>
+
 <script>
 	document.getElementById("searchengine").addEventListener("keydown", event =>
 			{ if (event.keyCode == 13)
-				{ var pVal = document.getElementById("searchengine").value; window.open("https://searx.be/search?q=" + pVal, "_self");}});
+				{ var pVal = document.getElementById("searchengine").value;
+						finalVal = pVal.replace(/\s/g, "");
+						{if (finalVal == "") {window.location.reload(false);} else {window.open("https://searx.be/search?q=" + pVal, "_self");}
+						}
+				}
+			});
 </script>
+
+<script>
+	function search() {var pVal = document.getElementById('searchengine').value; 
+			finalVal = pVal.replace(/\s/g, "");
+			{if (finalVal == "") {window.location.reload(false);} else {window.open("https://searx.be/search?q=" + pVal, "_self");}
+				}
+				}
+</script>
+
 </body>
 </html>
