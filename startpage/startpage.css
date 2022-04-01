@@ -45,6 +45,7 @@ body {
 	font: normal bold 24px "Oswald", sans-serif;
 	padding: 0.25em;
 	transition: background 0.125s ease-in-out 0s;
+	cursor: pointer;
 }
 .searchbutton:hover {
 	background: #FC8A94;
