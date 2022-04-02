@@ -9,7 +9,7 @@ Any suggetion for the page, or additions to the list itself, would be greatly ap
 
 ## Issues
 <p>1. The background doesn't load properly when the webpage is not as long as the height of the device. </p
-<p>2. The heading font does not render properly on firefox forks (atleast out of the box). </p>
+<p>2. The heading font does not render properly on gecko based browsers (like firefox).<br>Font settings in about:config needs to be edited to make it chromium/brave-like, but there's no documentation.</p>
 
 ## References
 Some help from 
