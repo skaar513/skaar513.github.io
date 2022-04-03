@@ -22,8 +22,8 @@ body {
 	background: #F7AEB7;
 	border-radius: 0.18em 0px 0px 0.18em;
 	color: #171B25;
-	width: 4.77em;
-	padding: 0.3125em;
+	display: inline-block;
+	padding: 0.3125em 0.3225em 0.3125em 0.3125em;
 	font: normal bold 32px "Oswald", sans-serif;
 }
 
