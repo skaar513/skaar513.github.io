@@ -40,22 +40,14 @@
 </div>
 
 <script>
-	document.getElementById("searchengine").addEventListener("keydown", event =>
-			{ if (event.keyCode == 13)
-				{ var pVal = document.getElementById("searchengine").value;
-						finalVal = pVal.replace(/\s/g, "");
-						{if (finalVal == "") {window.location.reload(false);} else {window.open("https://searx.be/search?q=" + pVal, "_self");}
-						}
-				}
-			});
-</script>
-
-<script>
 	function search() {var pVal = document.getElementById('searchengine').value; 
 			finalVal = pVal.replace(/\s/g, "");
 			{if (finalVal == "") {window.location.reload(false);} else {window.open("https://searx.be/search?q=" + pVal, "_self");}
 				}
-				}
+				  }
+
+	document.getElementById("searchengine").addEventListener("keydown", event =>
+			{ if (event.keyCode == 13) search() });
 </script>
 
 </body>
