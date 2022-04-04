@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Outfit");
+
+body, #main_results {
+	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB);
+}
+#results {
+	flex-direction: row-reverse;
+	background: transparent !important;
+	margin: 0 0 0 9.75vw;
+}
+
+/*hides the results after 9 links*/
+article:nth-child(n+10) {
+	display: none !important;
+}
+
+/*text selection*/
+::selection {
+	color: #171B25;
+	background: rgba(239,239,239,0.85);
+}
+
+/*images*/
+svg {
+	display: none !important;
+}
+img {
+	border-radius: 2px;
+}
+#search_logo {
+	display: none !important;
+}
+
+/*search_header*/
+.search_box {
+	border-radius: 4px !important;
+	border: none;
+	margin: 3vh 0 0 0;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.75);
+}
+#q {
+	border-radius: 4px 0 0 4px !important;
+	background: #222835 !important;
+	font: normal normal 18px "Outfit", sans-serif;
+}
+#send_search {
+	border-radius: 0 4px 4px 0 !important;
+	font: normal bold 20px "Oswald", sans-serif;
+	color: #171B25;
+	background: #F7AEB7;
+	transition: background 0.125s ease-in-out 0s;
+}
+#send_search:hover {
+	background: #FC8A94;
+}
+#send_search::after {
+	content: "Search";
+}
+#clear_search {
+	display: none;
+}
+
+#search_header {
+	background: #171B25;
+	margin: 2% 9% 2% 9%;
+	border-radius: 5px;
+	border: none !important;
+	padding: 20px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+}
+
+/*categories*/
+.category {
+	all: initial;
+	margin: auto 0;
+}
+.category:nth-of-type(10) {
+	display: none !important;
+}
+#categories, #categories > * {
+
+}
+.tooltips {
+	all: initial;
+	background: transparent;
+	color: #EFEFEF;
+	font: normal normal 15px "Oswald", sans-serif !important;
+	border-radius: 3px;
+	padding: 0.25em !important;
+	margin: auto !important;
+	width: 5em;
+	transition: color,background 0.125s ease-in-out 0s;
+}
+.category_name {
+	margin: auto;
+}
+.tooltips:hover {
+	background: pink;
+	color: #222835;
+}
+.tooltips:checked, .tooltips:active, .tooltips:disabled, .tooltips:empty, .tooltips:enabled, .tooltips:focus. .tooltips:target {
+	border: 3px solid blue !important;
+}
+
+/*search filters*/
+.search_filters {
+	background: #171B25;
+	border-radius: 4px;
+	padding: 1% 4% 1% 4%;
+	font: normal normal 12px "Outfit", sans-serif;
+	display: none;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+}
+select {
+	background: transparent;
+	display: inline-block;
+	width: 10% !important;
+}
+option {
+	background: #222835 !important;
+	border: none !important;
+	border-radius: 4px !important;
+}
+
+/*sidebar*/
+#sidebar {
+	width: 25vw !important;
+	margin: 0 0 0 2.5vw;
+}
+
+
+.dialog-error {
+	border-radius: 5px !important;
+	background: #171B25 !important;
+	border: none !important;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+	font: normal normal 15px "Outfit", sans-serif;
+	padding: 1.25vw !important;
+}
+
+.infobox {
+	border-radius: 5px !important;
+	background: #171B25;
+	border: none !important;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+	padding: 2.5vw !important;
+	font: normal normal 16px "Outfit", sans-serif !important;
+	line-height: 1.55em !important;
+	color: #EFEFEF;
+}
+
+#search_url-title {
+	display: none;
+}
+#search_url {
+	border-radius: 5px !important;
+	background: #171B25;
+	border: none !important;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+	padding: 1.25vw !important;
+	font: normal normal 16px "Outfit", sans-serif !important;
+	line-height: 1.55em !important;
+	color: #EFEFEF;
+}
+.selectable_url {
+	background: transparent;
+	border: none !important;
+	border-radius: 0 !important;
+	padding: 0 !important;
+}
+
+/*infotext heading*/
+h2 {
+	background: #8AE29D;
+	display: inline-block;
+	padding: 0.25em;
+	border-radius: 4px 0 0 4px;
+	color: #171B25;
+	font: normal bold 28px "Oswald", sans-serif;
+
+}
+
+/*main search results*/
+#urls {
+	background: #171B25;
+	border-radius: 5px;
+	border: 5px solid #222835;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+	margin: 0 -1vw 0 -1vw;
+	padding: 5vh 5vw 5vh 5vw;
+	width: 44vw;
+}
+.url_wrapper {
+	display: inline-block !important;
+}
+.result {
+	padding: 3vh 0 3vh 0;
+}
+.result:focus {
+	all: initial !important;
+}
+
+.engines {
+	color: #D9D7D6 !important;
+	font: normal normal 16px "Outfit", sans-serif;
+}
+.cache_link {
+	display: none !important;
+}
+
+.url_o1, .url_o2 {
+	font: normal normal 15px "Outfit", sans-serif;
+}
+h3 a, h3 .highlight {
+	font: normal normal 21px "Outfit",  sans-serif !important;
+	padding: 1% 0 1% 0;
+	color: #A8BEFB !important;
+}
+.content {
+	font: normal normal 16px "Outfit", sans-serif !important;
+	line-height: 1.55em !important;
+	color: #E4E4E4 !important;
+}
+
+/*colors*/
+.dialog-error div p p:nth-of-type(1) {
+	color: #FBE091 !important;
+}
+.dialog-error p p:nth-of-type(2) {
+	color: blue !important;
+}
+/*links*/
+.dialog-error a, #infoboxes .urls a {
+	color: #82D5EF !important;
+	transition: color 0.125s ease-in-out 0s;
+}
+.dialog-error a:hover, #infoboxes .urls a:hover {
+	text-decoration: underline;
+	color: #FC8A94 !important;
+}
+
+/*end*/
+#backToTop {
+	border: none !important;
+	border-radius: 2px;
+	width, height: 2em;
+	background: #F7AEB7;
+}
+#backToTop:hover {
+	background: #FC8A94;
+}
