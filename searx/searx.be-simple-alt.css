@@ -25,7 +25,7 @@ svg {
 	display: none !important;
 }
 img {
-	border-radius: 2px;
+	border-radius: 3px;
 }
 #search_logo {
 	display: none !important;
@@ -134,8 +134,9 @@ option {
 	background: #171B25 !important;
 	border: none !important;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
-	font: normal normal 15px "Outfit", sans-serif;
+	font: normal bold 15px "Outfit", sans-serif;
 	padding: 1.25vw !important;
+	color: #FBE091;
 }
 
 .infobox {
