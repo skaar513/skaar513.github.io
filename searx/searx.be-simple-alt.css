@@ -6,7 +6,7 @@ body, #main_results {
 #results {
 	flex-direction: row-reverse;
 	background: transparent !important;
-	margin: 0 0 0 9.75vw;
+	margin: -0.75vh 0 0 9.75vw;
 }
 
 /*hides the results after 9 links*/
@@ -186,8 +186,8 @@ h2 {
 	border-radius: 5px;
 	border: 5px solid #222835;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
-	margin: 0 -1vw 0 -1vw;
-	padding: 5vh 5vw 5vh 5vw;
+	margin: 0 -1vw 6vh -1vw;
+	padding: 5vh 5vw 2vh 5vw;
 	width: 44vw;
 }
 .url_wrapper {
@@ -248,4 +248,7 @@ h3 a, h3 .highlight {
 }
 #backToTop:hover {
 	background: #FC8A94;
+}
+#pagination, footer {
+	display: none !important;
 }
