@@ -1,0 +1,98 @@
+/*in works, for oscar logicodev*/
+@import url("https://fonts.googleapis.com/css?family=Oswald|Outfit");
+
+body {
+	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB);
+}
+
+.favicon {
+	display: none !important;
+}
+
+/*hides the results after 9 links*/
+.result:nth-child(n+10) {
+	display: none !important;
+}
+
+/*text selection*/
+::selection {
+	color: #171B25;
+	background: rgba(239,239,239,0.85);
+}
+
+
+
+/*search header*/
+.col-xs-12 {
+	background: #171B25;
+	border-radius: 5px !important;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+}
+
+
+
+
+/*main results*/
+#main_results {
+	background: #171B25;
+	border-radius: 5px !important;
+	border: 5px solid #222835;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+	padding: 2em 5em 2em 5em;
+	font: normal normal "Outfit",;
+}
+.result_header {
+	font: normal bold 23px "Outfit", sans-serif;
+	color: #A8BEFB !important;
+}
+.result-content {
+	color: #D9D7D6;
+	font: normal normal 16px "Outfit", sans-serif;
+	line-height: 1.55em;
+}
+.result {
+	margin-bottom: 3em;
+}
+.result:hover {
+	background: none !important;
+}
+
+/*sidebar*/
+.panel-title {
+	background: #8AE29D !important;
+	display: inline-block;
+	padding: 0.25em;
+	border-radius: 4px 0 0 4px !important;
+	color: #171B25;
+	font: normal bold 28px "Oswald", sans-serif;
+}
+#expand_infobox_wikipedia {
+	background: black !important;
+}
+.panel, .alert {
+	background: #171B25;
+	border-radius: 5px !important;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
+}
+
+
+#result-1 {
+	margin-top: 1em;
+}
+
+.pull-right {
+	font: normal normal 16px "Outfit", sans-serif;
+}
+
+.highlight {
+	background: none !important;
+}
+
+/*links*/
+.external-link {
+	font: normal normal 15px "Outfit", sans-serif;
+	color: #D9D7D6;
+}
+.pull-right a {
+	color: #82D5EF;
+}
