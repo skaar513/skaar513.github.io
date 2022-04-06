@@ -13,7 +13,7 @@
 
 	<div align=center class=searchcontainer>
 		<button class=searchbutton onclick="search()">Search</button>
-		<input align=center class=searchbox type=text id=searchengine autocomplete=off autofocus placeholder="with searX.be">
+		<input align=center class=searchbox type=text id=searchengine autocomplete=off autofocus placeholder="with searX">
 	</div>
 
 	<div class=subcontainer align=center>
@@ -42,7 +42,7 @@
 <script>
 	function search() {var pVal = document.getElementById('searchengine').value; 
 			finalVal = pVal.replace(/\s/g, "");
-			{if (finalVal == "") {window.location.reload(false);} else {window.open("https://searx.be/search?q=" + pVal, "_self");}
+			{if (finalVal == "") {window.location.reload(false);} else {window.open("https://paulgo.io/search?q=" + pVal, "_self");}
 				}
 				  }
 
