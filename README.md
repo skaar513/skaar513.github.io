@@ -5,7 +5,7 @@ Any suggetion for the page, or additions to the list itself, would be greatly ap
 
 ## Links
 - <a href=https://skaar513.github.io>movies</a>
-- <a href=https://skaar513.github.io/startpage/startpage>startpage</a>
+- <a href=https://skaar513.github.io/startpage>startpage</a>
 
 ## Issues
 <p>1. The background doesn't load properly when the webpage is not as long as the height of the device. </p
