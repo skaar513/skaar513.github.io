@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
+@import url("https://fonts.googleapis.com/css?family=Oswald|Outfit");
+
+body {
+	background: #171B25/*conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB)*/;
+}
+
+.container {
+	background: #171B25;
+	padding: 4% 5% 4% 5%;
+	margin: auto;
+	margin-top: 10%;
+}
+
+.searchcontainer {
+	display: flex;
+	box-shadow: 0px 1px 7.5px rgba(0,0,0,0.75);
+	width: max(50%, 300px);
+	margin: auto;
+	background: #222835;
+	border-radius: 4px;
+}
+
+.searchbox {
+	width: 100%;
+	background: transparent;
+	font: normal normal 18px "Outfit", sans-serif;
+	border: 0px solid yellow;
+	padding: 0.5em;
+	color: #E4E4E4;
+}
+
+.searchbutton, .enginebutton {
+	display: flex;
+	color: #171B25;
+	cursor: pointer;
+	border: 0px solid pink;
+	padding: 0.25em;
+	font: normal bold 25px "Oswald", sans-serif;
+	transition: background 0.125s ease-in-out 0s;
+}
+.searchbutton {
+	background: #F7AEB7;
+	border-radius: 4px 0 0 4px;
+}
+.enginebutton {
+	background: #F7AEB7;
+	border-radius: 0 4px 4px 0;
+}
+
+.searchbox:focus {
+	border: 0px solid blue;
+	outline: none;
+	border-radius: 4px;
+	color: #E4E4E4;
+}
+
+.searchbutton:hover {
+	background: #FC8A94;
+}
+
+.enginebutton:hover {
+	background: #E4E4E4;
+}
+
+.subcontainer {
+	border: 0px solid red;
+	font: normal normal 19px "Terminus", sans-serif;
+	display: flex;
+	width: max(50%, 300px);
+	margin: auto;
+}
+
+.docs, .code, .learn {
+	width: 33%;
+	border-radius: 4px;
+	background: #222835;
+	margin: 10px;
+	padding: 0 0 25px 0;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+.docs {
+	color: #FBE091;
+}
+.code {
+	color: #8AE29D;
+}
+.learn {
+	color: #A8BEFB;
+}
+
+a {
+	color: #E4E4E4;
+	transition: color 0.125s ease-in-out 0s;
+	text-decoration: none;
+}
+a:hover {
+	color: #FC8A94;
+	text-decoration: underline;
+}
+::selection {
+  color: #171B25;
+  background: rgba(239,239,239,0.85);
+}
