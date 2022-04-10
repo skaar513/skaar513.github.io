@@ -38,8 +38,8 @@
 	</div>
 	</div>
 <script>
-	const engine0 = { name:"SearX", url:"search.ononoki.org/search?q=" }
-	const engine1 = { name:"DuckDuckGo", url:"www.duckduckgo.com/?q=" }
+	const engine0 = { name:"DuckDuckGo", url:"www.duckduckgo.com/?q=" }
+	const engine1 = { name:"SearX", url:"search.ononoki.org/search?q=" }
 	const engine2 = { name:"Google", url:"www.google.com/search?q=" }
 	const allEngines = [ engine0, engine1, engine2 ];
 	
@@ -50,7 +50,8 @@
 		x = x + 1;
 		activeEngine = allEngines[+x];
 		document.getElementById('engineText').innerHTML = activeEngine.name;
-		url = activeEngine.url; };
+		url = activeEngine.url;
+		document.getElementById('searchInput').focus(); }
 
 	toggleEngine();
 
