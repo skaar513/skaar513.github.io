@@ -33,7 +33,7 @@ body {
 	border-radius: 5px 0 0 5px;
 	background: #8AE29D;
 	color: #171B25;
-	width: 3.5em;
+	display: inline-block;
 }
 
 .subheading1, .subheading2 {
