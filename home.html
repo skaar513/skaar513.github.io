@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<title>Home</title>
+	<meta charset=UTF-8>
+	<link rel=stylesheet href=css/home.css>
+</head>
+
+<body>
+	<div class=mainContainer>
+	<h1 id=heading>Home Page</h1>	
+
+	<div class=searchContainer>
+	<input id=searchInput placeholder="Search something with ..." />
+	<button id=searchButton onclick="search()">Search</button>
+	</div>
+	<button id=toggleContainer><span id=toggleEngine onclick="toggleEngine()"></span><span id=toggleBrief></span></button>
+
+	<div class=dividercontainer>
+	<i class=dividerx1>⨯</i><hr><i class=dividerx2>⨯</i><hr><i class=dividerx3>⨯</i>
+	</div>
+
+	<div>
+	<h2 id=subHeading>Bookmarks</h2>
+	<ul class=maintext>
+
+	<h3 id=subHeading1>Webpages</h3>
+	<ul>
+	<li><a href=https://lukesmith.xyz>Luke Smith</a></li>
+	<li><a href=https://github.com>Github Repositories</a></li>
+	<li><a href=https://skaar513.github.io>Great Movies</a></li>
+	</ul>
+
+	<h3 id=subHeading2>Manual</h3>
+	<ul class=maintext>
+	<li><a href=https://gnu.org>Bash Scripting</a></li>
+	<li><a href=file:///home/documents/books/>The C Programming</a></li>
+	<li><a href=file:///home/savar/>Some stuff here as well</a></li>
+	</ul>
+
+	</ul>
+	</div>
+
+	</div>
+</body>
+
+<script>
+	const engine0 = { name:"DuckDuckGo", brief:"A (supposedly) Privacy respecting Search Engine", color:"#FBE091", url:"www.duckduckgo.com/?q=" }
+	const engine1 = { name:"Google", brief:"A Search Engine with NO User Privacy whatsoever", color:"#A8BEFB", url:"www.google.com/search?q=" }
+	const engine2 = { name:"SearX", brief:"The Most Decentralized One, But also the Slowest", color:"#8AE29D", url:"search.ononoki.org/search?q=" }
+	const allEngines = [ engine0, engine1, engine2 ];
+	
+	var activeEngine, url;
+	var x = -1;
+
+	function toggleEngine() { if (x == allEngines.length - 1) x = -1; 
+		x = x + 1;
+		activeEngine = allEngines[+x];
+		document.getElementById('toggleEngine').style.color = activeEngine.color;
+		document.getElementById('toggleEngine').innerHTML = activeEngine.name;
+		document.getElementById('toggleBrief').innerHTML = activeEngine.brief;
+		url = activeEngine.url; 
+		document.getElementById('searchInput').focus() };
+
+	toggleEngine();
+
+	function search() {var pVal = document.getElementById('searchInput').value; 
+			finalVal = pVal.replace(/\s/g, "");
+			{if (finalVal == "") {window.location.reload(false);} else {window.open("https://" + url + pVal, "_self");}
+				}
+				  };
+
+	document.getElementById("searchInput").addEventListener("keydown", event =>
+			{ if (event.keyCode == 13) search() });
+</script>
+</html>

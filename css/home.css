@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Rubik|Outfit|Epilogue|Oswald");
+
+/*removes all the unattractive defaults*/
+input {
+	outline: none;
+	border: none;
+}
+button {
+	border: none;
+}
+
+body {
+	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB)/*linear-gradient(to bottom,#A8BEFB,#F7AEB7)*/;
+	/*border: 3px solid red;*/
+	line-height: 1.55em;
+}
+
+.mainContainer {
+	background: #171B25;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	width: 55%;
+	border: 5px solid #222835;
+	border-radius: 5px 5px 5px 5px;
+	padding: 3% 7% 3% 7%;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75)
+}
+
+#heading {
+	background: #F7AEB7;
+	border-radius: 0.18em 0px 0px 0.18em;
+	color: #171B25;
+	display: inline-block;
+	padding: 0.3125em 0.3225em 0.3125em 0.3125em;
+	font: normal bold 32px "Oswald", sans-serif;
+}
+
+#subHeading {
+	font: normal bold 25px "Oswald", sans-serif;
+	padding: 0.28em 0.31em 0.28em 0.28em;
+	border-radius: 5px 0 0 5px;
+	background: #94D6A3;
+	color: #171B25;
+	display: inline-block;
+}
+
+.searchContainer {
+	margin: auto;
+	display: flex;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	margin-top: 1.5em;
+	width: calc(100% - 2em);
+}
+
+#searchInput {
+	width: 100%;
+	font: normal normal 20px "Outfit", sans-serif;
+	padding: 0.7em;
+	background: #222835;
+	border-radius: 4px 0 0 4px;
+	color: #EFEFEF;
+}
+#searchInput:focus {
+	color: #EFEFEF;
+}
+#searchInput::placeholder {
+  color: rgba(239,239,239,0.5);
+}
+
+#searchButton {
+	border-radius: 0 4px 4px 0;
+	font: normal bold 25px "Oswald", sans-serif;
+	color: #171B25;
+	background: #F7AEB7;
+	padding: 0.25em;
+	cursor: pointer;
+	transition: background 0.125s ease-in-out 0s;
+}
+#searchButton:hover {
+	background: #FC8A94;
+}
+
+#toggleContainer {
+	border-radius: 2px;
+	padding: 1em;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+	display: grid;
+	width: 65%;
+	margin: auto;
+	background: rgba(32,40,53,0.9);
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+#toggleEngine {
+	font: normal 550 19px "Outfit", sans-serif;
+	transition: color 0.125s ease-in-out 0s;
+	display: block;
+}
+#toggleBrief {
+	font: normal normal 17px "Outfit", sans-serif;
+	color: #E4E4E4;
+	display: block;
+}
+#toggleEngine:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#subHeading1, #subHeading2 {
+	font: normal normal 25px "Oswald", sans-serif;
+}
+#subHeading1 {
+	color: #FBE091;
+}
+#subHeading2 {
+	color: #A8BEFB;
+}
+
+::selection {
+	color: #171B25;
+	background: rgba(239,239,239,0.85);
+}
+
+.maintext {
+	color: #D9D7D6;
+	font: normal normal 18px "Outfit", sans-serif;
+	border: 0px solid pink;
+	border-radius: 5px;
+	background: transparent;
+}
+
+.dividercontainer {
+	display: flex;
+	width: 50%;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: -1%;
+}
+hr {
+	border-top: 2px solid #8AE29D;
+	width: 37%;
+	font: 38px "Outfit", sans-serif;
+}
+.dividerx1, .dividerx2, .dividerx3 {
+	font: 28px "Outfit", sans-serif;
+}
+.dividerx1 {
+	color: #FBE091;
+}
+.dividerx2 {
+	color: #FC8A94;
+}
+.dividerx3 {
+	color: #A8BEFB;
+}
+
+
+a {
+	transition: color 0.125s ease-in-out 0s;
+	color: #EFEFEF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FC8A94;
+	text-decoration: underline;
+}
