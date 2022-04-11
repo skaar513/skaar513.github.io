@@ -83,17 +83,15 @@ body {
 
 #toggleContainer {
 	border-radius: 2px;
-	padding: 1em;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+	padding: 0.5em 0 0 0;
 	display: grid;
 	width: 65%;
 	margin: auto;
-	background: rgba(32,40,53,0.9);
-	margin-top: 1em;
-	margin-bottom: 1.5em;
+	background: transparent;
+	margin-top: 0.75em;
 }
 #toggleEngine {
-	font: normal 550 19px "Outfit", sans-serif;
+	font: normal 600 18px "Outfit", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
 	display: block;
 }
