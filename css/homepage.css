@@ -3,7 +3,7 @@
 input{outline:none;border:none;}/**/button{border:none;}
 
 body {
-	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB)/*linear-gradient(to bottom,#A8BEFB,#F7AEB7)*/;
+	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB);
 	line-height: 1.55em;
 }
 
