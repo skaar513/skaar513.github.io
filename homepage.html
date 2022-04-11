@@ -47,9 +47,10 @@
 
 <script>
 	const engine0 = { name:"DuckDuckGo", brief:"A (supposedly) Privacy respecting Search Engine", color:"#FBE091", url:"www.duckduckgo.com/?q=" }
-	const engine1 = { name:"Google", brief:"A Search Engine with NO User Privacy whatsoever", color:"#A8BEFB", url:"www.google.com/search?q=" }
-	const engine2 = { name:"SearX", brief:"The Most Decentralized One, But also the Slowest", color:"#8AE29D", url:"search.ononoki.org/search?q=" }
-	const allEngines = [ engine0, engine1, engine2 ];
+	const engine1 = { name:"SearX", brief:"A Decentralized and Federated Search Engine", color:"#8AE29D", url:"search.ononoki.org/search?q=" }
+	const engine2 = { name:"ArchWiki", brief:"One of the Biggest Wiki for Linux Users", color:"#A8BEFB", url:"wiki.archlinux.org/index.php?search=" }
+	const engine3 = { name:"YouTube", brief:"Please Don't Use This", color:"#FC8A84", url:"youtube.com/results?search_query=" }
+	const allEngines = [ engine0, engine1, engine2, engine3 ];
 	
 	var activeEngine, url;
 	var x = -1;
@@ -72,6 +73,7 @@
 				  };
 
 	document.getElementById("searchInput").addEventListener("keydown", event =>
-			{ if (event.keyCode == 13) search() });
+			{ if (event.keyCode == 13) search();
+			else if (event.keyCode == 9) toggleEngine(); });
 </script>
 </html>
