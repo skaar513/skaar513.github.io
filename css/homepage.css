@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Outfit|Oswald");
-/*removes all the unattractive defaults*/
-input {
-	outline: none;
-	border: none;
-}
-button {
-	border: none;
-}
+/*removes the unattractive defaults*/
+input{outline:none;border:none;}/**/button{border:none;}
 
 body {
 	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB)/*linear-gradient(to bottom,#A8BEFB,#F7AEB7)*/;

@@ -2,7 +2,6 @@
 
 body {
 	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB)/*linear-gradient(to bottom,#A8BEFB,#F7AEB7)*/;
-	/*border: 3px solid red;*/
 	line-height: 1.55em;
 }
 
@@ -15,7 +14,7 @@ body {
 	border: 5px solid #222835;
 	border-radius: 5px 5px 5px 5px;
 	padding: 3% 7% 3% 7%;
-	box-shadow: 5px 5px 10px rgba(0,0,0,0.75) /*rgba(255,255,255,0.5)*/;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.75);
 }
 
 .heading {
