@@ -28,7 +28,7 @@ body {
 }
 
 .watchlistsubheading {
-	font: normal normal 25px "Oswald", sans-serif;
+	font: normal bold 25px "Oswald", sans-serif;
 	padding: 0.28em;
 	border-radius: 5px 0 0 5px;
 	background: #94D6A3;
