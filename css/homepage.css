@@ -85,10 +85,12 @@ body {
 #toggleEngine {
 	font: normal 600 18px "Outfit", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
+	line-height: 1.55em;
 	display: block;
 }
 #toggleBrief {
 	font: normal normal 17px "Outfit", sans-serif;
+	line-height: 1.55em;
 	color: #E4E4E4;
 	display: block;
 }
