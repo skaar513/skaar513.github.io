@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Outfit|Oswald");
-
 /*removes all the unattractive defaults*/
 input {
 	outline: none;
@@ -11,7 +10,6 @@ button {
 
 body {
 	background: conic-gradient(#A8BEFB, #F7AEB7, #A8BEFB)/*linear-gradient(to bottom,#A8BEFB,#F7AEB7)*/;
-	/*border: 3px solid red;*/
 	line-height: 1.55em;
 }
 
@@ -38,7 +36,7 @@ body {
 
 #subHeading {
 	font: normal bold 25px "Oswald", sans-serif;
-	padding: 0.28em 0.31em 0.28em 0.28em;
+	padding: 0.28em;
 	border-radius: 5px 0 0 5px;
 	background: #94D6A3;
 	color: #171B25;
