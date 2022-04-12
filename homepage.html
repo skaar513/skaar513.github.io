@@ -68,7 +68,7 @@
 
 	toggleEngine();
 
-	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace("#","%23").replace("&","%26").replace("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d"); 
+	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace("#","%23").replace("&","%26").replace("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F");
 			let noSpaceVal = realVal.replace(/\s/g, "");
 			{if (noSpaceVal == "") {window.location.reload(false);} else {window.open("https://" + url + realVal, "_self");}
 				}
