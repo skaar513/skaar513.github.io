@@ -36,7 +36,7 @@
 	<h3 id=subHeading2>Manual</h3>
 	<ul class=maintext>
 	<li><a href=https://github.com/kyoz/iquotes/tree/master/quotes>Quotes</a></li>
-	<li><a href=file:///home/documents/books/>The C Programming</a></li>
+	<li><a href=https://elkowar.github.io/eww>Eww - ElKowar's Wacky Widgets</a></li>
 	<li><a href=file:///home/savar/>Some stuff here as well</a></li>
 	</ul>
 
@@ -68,7 +68,7 @@
 
 	toggleEngine();
 
-	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace("#","%23").replace("&","%26").replace("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F");
+	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F");
 			let noSpaceVal = realVal.replace(/\s/g, "");
 			{if (noSpaceVal == "") {window.location.reload(false);} else {window.open("https://" + url + realVal, "_self");}
 				}
