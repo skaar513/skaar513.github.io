@@ -57,7 +57,7 @@
 	var activeEngine, url;
 	var x = -1;
 
-	function toggleEngine() { if (x == allEngines.length - 1) x = -1; 
+	function toggleEngine() { x = (x == allEngines.length - 1) ? -1:x; 
 		x = x + 1;
 		activeEngine = allEngines[+x];
 		document.getElementById('toggleEngine').style.color = activeEngine.color;
@@ -68,9 +68,9 @@
 
 	toggleEngine();
 
-	function search() {var pVal = document.getElementById('searchInput').value; 
-			finalVal = pVal.replace(/\s/g, "");
-			{if (finalVal == "") {window.location.reload(false);} else {window.open("https://" + url + pVal, "_self");}
+	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace("#","%23").replace("&","%26").replace("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d"); 
+			let noSpaceVal = realVal.replace(/\s/g, "");
+			{if (noSpaceVal == "") {window.location.reload(false);} else {window.open("https://" + url + realVal, "_self");}
 				}
 				  };
 
