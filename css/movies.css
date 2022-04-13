@@ -129,18 +129,3 @@ hr {
   background: rgba(239,239,239,0.85);/*#EFEFEF*/;
 }
 
-.navigation {
-	display: inline-block;
-	text-align: center;
-	color: #D9D7D6;
-	width: 20%;
-}
-.pipe {
-	font: normal bold 28px "Outfit", sans-serif;
-	color: #D9D7D6;
-}
-.navcontainer {
-	text-align: center;
-	margin: auto;
-	font: normal normal 15px "Outfit", sans-serif;
-}
