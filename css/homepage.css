@@ -77,15 +77,17 @@ body {
 	border-radius: 2px;
 	padding: 0.5em 0 0 0;
 	display: grid;
-	width: 65%;
-	margin: auto;
+	width: 55%;
+	margin-left: 2.5em;
 	background: transparent;
 	margin-top: 0.75em;
+	text-align: left;
 }
 #toggleEngine {
 	font: normal 600 18px "Outfit", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
 	line-height: 1.55em;
+	margin-left: 0.1em;
 	display: block;
 }
 #toggleBrief {
