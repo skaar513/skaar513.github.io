@@ -160,3 +160,16 @@ a:hover {
 	color: #FC8A94;
 	text-decoration: underline;
 }
+.abouttext {
+	color: #D9D7D6;
+	padding: 1%;
+	font: normal normal 15px "outfit", sans-serif;
+	line-height: 1.55em;
+	margin: -2% 0 0 0;
+}
+.aboutsubheading {
+	font: normal normal 23px "Oswald", sans-serif;
+	padding: 1%;
+	border-radius: 5px 0 0 5px;
+	color: #DA91CE;
+}
