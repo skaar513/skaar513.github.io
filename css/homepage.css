@@ -177,5 +177,6 @@ a:hover {
 @media screen and (max-width: 7in) {
 	.mainContainer {
 		width: 80%;
+		zoom: 77%;
 	}
 }
