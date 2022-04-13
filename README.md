@@ -5,7 +5,7 @@ Any suggetion for the page, or additions to the list itself, would be greatly ap
 
 ## Links
 - <a href=https://skaar513.github.io>movies</a>
-- <a href=https://skaar513.github.io/startpage.html>startpage</a>
+- <a href=https://skaar513.github.io/homepage.html>startpage</a>
 
 ## Issues
 <p>1. The background doesn't load properly when the webpage is not as long as the height of the device. </p
@@ -14,7 +14,7 @@ Any suggetion for the page, or additions to the list itself, would be greatly ap
 ## References
 Some help from 
 <a href=https://w3schools.com/css>w3schools</a>, 
-<a href=https://camo.githubusercontent.com/9297eb33015795689442bca39f2381dc15861aeacc13abde2611f4fe391a8cf6/68747470733a2f2f692e6962622e636f2f534b62546b6a512f31322e706e67>obliviousofcraps</a>, 
+<a href=https://github.com/obliviousofcraps/>obliviousofcraps</a> (click <a href=https://camo.githubusercontent.com/9297eb33015795689442bca39f2381dc15861aeacc13abde2611f4fe391a8cf6/68747470733a2f2f692e6962622e636f2f534b62546b6a512f31322e706e67>here)</a>, 
 <a href=https://jgthms.com/web-design-in-4-minutes>jgthms</a> and 
 <a href=https://lukesmith.xyz>lukesmith</a>
 was taken
