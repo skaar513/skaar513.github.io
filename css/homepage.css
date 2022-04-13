@@ -174,7 +174,7 @@ a:hover {
 	color: #DA91CE;
 }
 
-@media screen and (max-width: 7in) {
+@media screen and (max-width: 3in) {
 	.mainContainer {
 		width: 80%;
 		zoom: 77%;
