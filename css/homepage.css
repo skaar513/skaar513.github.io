@@ -173,3 +173,9 @@ a:hover {
 	border-radius: 5px 0 0 5px;
 	color: #DA91CE;
 }
+
+@media screen and (max-width: 7in) {
+	.mainContainer {
+		width: 80%;
+	}
+}
