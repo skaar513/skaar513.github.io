@@ -96,9 +96,8 @@ body {
 	color: #E4E4E4;
 	display: block;
 }
-#toggleEngine:hover {
-	text-decoration: underline;
-	cursor: pointer;
+#toggleContainer:hover {
+	cursor: crosshair;
 }
 
 #subHeading1, #subHeading2 {
@@ -193,15 +192,15 @@ a:hover {
 	hr{
 	width: 30%;
 	}
-	toggleEngine {
-		font: normal normal 17.5px "Outfit", sans-serif;
+	#toggleEngine {
+		font: normal bold 17.5px "Outfit", sans-serif;
 	}
-	toggleBrief {
+	#toggleBrief {
 		font: normal normal 16.5px "Outfit", sans-serif;
 	}
-	#toggleEngine:hover {
+	/*#toggleEngine:hover {
 		cursor: pointer;
-	}
+	}*/
 	.maintext {
 	}
 }
