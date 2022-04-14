@@ -25,7 +25,7 @@ body {
 	color: #171B25;
 	display: inline-block;
 	padding: 0.3125em 0.3225em 0.3125em 0.3125em;
-	font: normal bold 32px "Oswald", sans-serif;
+	font: normal bold 29px "Oswald", sans-serif;
 }
 
 #subHeading {
@@ -47,7 +47,7 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal normal 20px "Outfit", sans-serif;
+	font: normal normal 19px "Outfit", sans-serif;
 	padding: 0.7em;
 	background: #222835;
 	border-radius: 4px 0 0 4px;
@@ -62,7 +62,7 @@ body {
 
 #searchButton {
 	border-radius: 0 4px 4px 0;
-	font: normal bold 25px "Oswald", sans-serif;
+	font: normal bold 23px "Oswald", sans-serif;
 	color: #171B25;
 	background: #F7AEB7;
 	padding: 0.25em;
@@ -84,7 +84,7 @@ body {
 	text-align: left;
 }
 #toggleEngine {
-	font: normal 600 18px "Outfit", sans-serif;
+	font: normal 600 17.5px "Outfit", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
 	line-height: 1.55em;
 	margin-left: 0.1em;
@@ -174,9 +174,9 @@ a:hover {
 	color: #DA91CE;
 }
 
-@media screen and (max-width: 5in) {
+/*@media screen and (max-width: 5in) {
 	.mainContainer {
 		width: 80%;
 		zoom: 77%;
 	}
-}
+}*/
