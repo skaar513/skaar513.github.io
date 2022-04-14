@@ -25,13 +25,13 @@ body {
 	color: #171B25;
 	display: inline-block;
 	padding: 0.3125em 0.3225em 0.3125em 0.3125em;
-	font: normal bold 29px "Oswald", sans-serif;
+	font: normal bold 31px "Oswald", sans-serif;
 }
 
 #subHeading {
-	font: normal bold 25px "Oswald", sans-serif;
+	font: normal bold 24px "Oswald", sans-serif;
 	padding: 0.28em;
-	border-radius: 5px 0 0 5px;
+	border-radius: 0.18em 0 0 0.18em;
 	background: #94D6A3;
 	color: #171B25;
 	display: inline-block;
@@ -47,7 +47,7 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal normal 19px "Outfit", sans-serif;
+	font: normal normal 19.5px "Outfit", sans-serif;
 	padding: 0.7em;
 	background: #222835;
 	border-radius: 4px 0 0 4px;
@@ -62,7 +62,7 @@ body {
 
 #searchButton {
 	border-radius: 0 4px 4px 0;
-	font: normal bold 23px "Oswald", sans-serif;
+	font: normal bold 25px "Oswald", sans-serif;
 	color: #171B25;
 	background: #F7AEB7;
 	padding: 0.25em;
@@ -84,14 +84,14 @@ body {
 	text-align: left;
 }
 #toggleEngine {
-	font: normal 600 17.5px "Outfit", sans-serif;
+	font: normal 600 18px "Outfit", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
 	line-height: 1.55em;
 	margin-left: 0.1em;
 	display: block;
 }
 #toggleBrief {
-	font: normal normal 17px "Outfit", sans-serif;
+	font: normal normal 17.5px "Outfit", sans-serif;
 	line-height: 1.55em;
 	color: #E4E4E4;
 	display: block;
@@ -118,7 +118,7 @@ body {
 
 .maintext {
 	color: #D9D7D6;
-	font: normal normal 18px "Outfit", sans-serif;
+	font: normal normal 17.5px "Outfit", sans-serif;
 	border: 0px solid pink;
 	border-radius: 5px;
 	background: transparent;
@@ -174,9 +174,43 @@ a:hover {
 	color: #DA91CE;
 }
 
-/*@media screen and (max-width: 5in) {
+@media screen and (max-width: 9in) {
 	.mainContainer {
-		width: 80%;
-		zoom: 77%;
+		width: 70%;
 	}
-}*/
+	#searchButton {
+		font: normal bold 23px "Oswald", sans-serif;
+	}
+	#subHeading {
+		font: normal bold 23px "Oswald", sans-serif;
+	}
+	#searchInput {
+		font: normal normal 19px "Outfit", sans-serif;
+	}
+	#toggleBreif {
+		font: normal normal 17px "Outfit", sans-serif;
+	}
+	hr{
+	width: 30%;
+	}
+	toggleEngine {
+		font: normal normal 17.5px "Outfit", sans-serif;
+	}
+	toggleBrief {
+		font: normal normal 16.5px "Outfit", sans-serif;
+	}
+	.maintext {
+	}
+}
+
+@media screen and (max-width: 5in) {
+	.mainContainer {
+		width: 90%;
+	}
+	#heading {
+		font: normal bold 29px "Oswald", sans-serif;
+	}
+	hr{
+	width: 27%;
+	}
+}
