@@ -198,16 +198,17 @@ a:hover {
 	#toggleBrief {
 		font: normal normal 16.5px "Outfit", sans-serif;
 	}
-	/*#toggleEngine:hover {
-		cursor: pointer;
-	}*/
 	.maintext {
+	}
+	.hideonphone {
+		display: none;
 	}
 }
 
 @media screen and (max-width: 5in) {
 	.mainContainer {
-		width: 90%;
+		width: 83%;
+		box-shadow: none;
 	}
 	#heading {
 		font: normal bold 29px "Oswald", sans-serif;
@@ -215,4 +216,5 @@ a:hover {
 	hr{
 	width: 27%;
 	}
+	/*work on the spacing as well*/
 }

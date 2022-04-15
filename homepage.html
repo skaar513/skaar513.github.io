@@ -49,7 +49,8 @@
 
 <h2 class=aboutsubheading>note</h2>
 <p class=abouttext>
-Tip: Pressing Alt+Tab (or clicking the engine's info itself) while the search box is focused cycles through the stored engines
+<span class=hideonphone>Tip: Pressing Alt+Tab while the search box is focused cycles through the stored engines</span><br>
+Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles through the stored engines
 </p>
 
 </div>
@@ -85,5 +86,8 @@ Tip: Pressing Alt+Tab (or clicking the engine's info itself) while the search bo
 	document.getElementById("searchInput").addEventListener("keydown", event =>
 			{ if (event.keyCode == 13) search();
 			else if (event.keyCode == 9) toggleEngine(); });
+
+// Reduces the length of inputbox placeholder if device is narrow
+document.getElementById("searchInput").placeholder = (window.matchMedia("(max-width: 5in)").matches) ? "Search with ...":document.getElementById("searchInput").placeholder;
 </script>
 </html>
