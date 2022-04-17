@@ -132,14 +132,17 @@ body {
 }
 hr {
 	border: 0px solid #8AE29D;
-	border-top: 1px solid #8AE29D;
+	border-top: 2px solid #8AE29D;
 	border-bottom: 1px solid #8AE29D;
 	background: #8AE29D;
-	font: normal normal 21px "Outfit", sans-serif;
+	font: normal normal 17px "Outfit", sans-serif;
 	width: 37%;
 }
 .dividerx1, .dividerx2, .dividerx3 {
-	font: normal black 21px "Material Icons", sans-serif;
+	font-size: 19px !important;
+	font-weight: 700;
+	-webkit-text-stroke: 1px;
+
 }
 .dividerx1 {
 	color: #FBE091;
