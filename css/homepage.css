@@ -131,12 +131,14 @@ body {
 	margin-bottom: -1%;
 }
 hr {
-	border-top: 2px solid #8AE29D;
+	border: 0px solid #8AE29D;
+	border-top: 1px solid #8AE29D;
+	border-bottom: 1px solid #8AE29D;
+	background: #8AE29D;
+	font: normal normal 21px "Outfit", sans-serif;
 	width: 37%;
-	font: 38px "Outfit", sans-serif;
 }
 .dividerx1, .dividerx2, .dividerx3 {
-	font: 28px "Outfit", sans-serif;
 }
 .dividerx1 {
 	color: #FBE091;
