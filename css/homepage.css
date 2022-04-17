@@ -139,6 +139,7 @@ hr {
 	width: 37%;
 }
 .dividerx1, .dividerx2, .dividerx3 {
+	font: normal black 21px "Material Icons", sans-serif;
 }
 .dividerx1 {
 	color: #FBE091;
