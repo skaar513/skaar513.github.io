@@ -3,7 +3,6 @@
 <head>
 	<title>Home</title>
 	<link rel=stylesheet href=css/homepage.css />
-	<link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	<link rel=icon href=nixos.svg />
 	<meta charset=UTF-8 />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,10 +13,11 @@
 	<h1 id=heading>Home Page</h1>	
 
 	<div class=searchContainer>
-	<input id=searchInput placeholder="Search something with ..." />
-	<button id=searchButton onclick="search()">Search</button>
+	<input id=searchInput placeholder="Search something with ..." autocomplete=off />
+	<button class="material-icons" id=clearButton onclick="clearInput()">close</button>
+	<button class="material-icons" id=searchButton onclick="search()">search</button>
 	</div>
-	<button id=toggleContainer onclick="toggleEngine()"><span id=toggleEngine></span><span id=toggleBrief></span></button>
+	<button id=toggleContainer title="Switch Engine" onclick="toggleEngine()"><span id=toggleEngine></span><span id=toggleBrief></span></button>
 
 	<div class=dividercontainer>
 	<span class="material-icons dividerx1" style="font-style: bold;">close</span><hr><span class="material-icons dividerx2">close</span><hr><span class="material-icons dividerx3">close</span>
@@ -70,24 +70,32 @@ Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles th
 
 	function toggleEngine() { x = (x == allEngines.length - 1) ? -1:x; 
 		x = x + 1;
-		activeEngine = allEngines[+x];
+		activeEngine = allEngines[x];
 		document.getElementById('toggleEngine').style.color = activeEngine.color;
 		document.getElementById('toggleEngine').innerHTML = activeEngine.name;
 		document.getElementById('toggleBrief').innerHTML = activeEngine.brief;
 		url = activeEngine.url; 
-		document.getElementById('searchInput').focus() };
-
-	toggleEngine();
+		document.getElementById('searchInput').focus(); };
 
 	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F");
 			let noSpaceVal = realVal.replace(/\s/g, "");
 			{if (noSpaceVal == "") {window.location.reload(false);} else {window.open("https://" + url + realVal, "_self");}
 				}
 				  };
+	function clearInput() { document.getElementById("searchInput").value = "";
+				document.getElementById('searchInput').focus();
+				hideClearButton(); };
+
+	toggleEngine();
 
 	document.getElementById("searchInput").addEventListener("keydown", event =>
 			{ if (event.keyCode == 13) search();
 			else if (event.keyCode == 9) toggleEngine(); });
+
+	document.getElementById("searchInput").addEventListener("input", hideClearButton);
+	function hideClearButton() {
+			document.getElementById("clearButton").style.display = (document.getElementById("searchInput").value == "") ? "none":"inline";
+		};
 
 // Reduces the length of inputbox placeholder if device is narrow
 document.getElementById("searchInput").placeholder = (window.matchMedia("(max-width: 5in)").matches) ? "Search with ...":document.getElementById("searchInput").placeholder;

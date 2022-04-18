@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Outfit|Oswald");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 /*removes the unattractive defaults*/
 input{outline:none;border:none;}/**/button{border:none;}
 
@@ -60,15 +62,31 @@ body {
   color: rgba(239,239,239,0.5);
 }
 
-#searchButton {
-	border-radius: 0 4px 4px 0;
-	font: normal bold 25px "Oswald", sans-serif;
+#searchButton, #clearButton {
 	color: #171B25;
-	background: #F7AEB7;
-	padding: 0.25em;
-	cursor: pointer;
 	transition: background 0.125s ease-in-out 0s;
 }
+
+#searchButton {
+	border-radius: 0 4px 4px 0;
+	padding: 0.4em;
+	background: #F7AEB7;
+	font: normal normal 28px "Material Icons", sans-serif;
+	cursor: pointer;
+}
+
+#clearButton {
+	padding: 0.15em;
+	font: normal normal 23px "Material Icons", sans-serif;
+	background: #222835/*rgba(42,49,65,1)*/;
+  	color: rgba(239,239,239,0.75);
+	transition: color 0.175s ease-in-out 0s;
+	display: none;
+}
+#clearButton:hover {
+	color: rgba(239,239,239,0.9);
+}
+
 #searchButton:hover {
 	background: #FC8A94;
 }
@@ -184,7 +202,7 @@ a:hover {
 		width: 70%;
 	}
 	#searchButton {
-		font: normal bold 23px "Oswald", sans-serif;
+		/*font: normal bold 23px "Material Icons", sans-serif;*/
 	}
 	#subHeading {
 		font: normal bold 23px "Oswald", sans-serif;
@@ -209,6 +227,9 @@ a:hover {
 	.hideonphone {
 		display: none;
 	}
+	.searchContainer {
+		width: calc(100% - 1em);
+	}
 }
 
 @media screen and (max-width: 5in) {
@@ -221,6 +242,9 @@ a:hover {
 	}
 	hr{
 	width: 27%;
+	}
+	.searchContainer {
+		width: calc(100% - 0.5em);
 	}
 	/*work on the spacing as well*/
 }
