@@ -69,7 +69,7 @@ body {
 
 #searchButton {
 	border-radius: 0 4px 4px 0;
-	padding: 0.4em;
+	padding: 0.375em 0.4em 0.375em 0.4em;
 	background: #F7AEB7;
 	font: normal normal 28px "Material Icons", sans-serif;
 	cursor: pointer;
