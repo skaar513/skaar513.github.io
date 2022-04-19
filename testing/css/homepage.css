@@ -62,7 +62,7 @@ body {
 #searchButton {
 	border-radius: 0 4px 4px 0;
 	padding: 0.375em 0.4em 0.375em 0.4em;
-	margin-left: 1px;
+	margin-left: 2px;
 	color: #EFEFEF;
 	background: #222835;
 	font: normal normal 28px "Material Icons", sans-serif;
@@ -83,6 +83,7 @@ body {
 
 #searchButton:hover {
 	background: #FC8A94;
+	color: #171B25;
 }
 
 #toggleContainer {
