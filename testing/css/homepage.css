@@ -15,7 +15,7 @@ body {
 	width: 55%;
 	border-radius: 2px;
 	box-shadow:
-		0px 10px 20px rgba(0,0,0, 0.75)
+		0px 10px 25px rgba(0,0,0, 0.85)
 		;
 	position: absolute;
 	top: 50%;
@@ -41,7 +41,7 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal normal 19.5px "Outfit", sans-serif;
+	font: normal normal 20px "Outfit", sans-serif;
 	padding: 0.7em;
 	background: #222835;
 	border-radius: 4px 0 0 4px;
@@ -62,7 +62,9 @@ body {
 #searchButton {
 	border-radius: 0 4px 4px 0;
 	padding: 0.375em 0.4em 0.375em 0.4em;
-	background: #F7AEB7;
+	margin-left: 1px;
+	color: #EFEFEF;
+	background: #222835;
 	font: normal normal 28px "Material Icons", sans-serif;
 	cursor: pointer;
 }
@@ -87,7 +89,6 @@ body {
 	border-radius: 2px;
 	background: transparent;
 	width: 100%;
-	border: 1px solid pink;
 }
 #toggleEngine {
 	font: normal normal 26px "Readex Pro", sans-serif;
@@ -96,6 +97,19 @@ body {
 	margin-left: 0.1em;
 }
 #toggleButton {
+	border-radius: 50%;
+	border: 2px solid #222835;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+	padding: 0.25em;
+	background: #222835;
+	color: #EFEFEF;
+	font: normal normal 22px "Material Icons", sans-serif;
+	display: inline;
+	transition: color 0.125s ease-in-out 0s;
+}
+
+#toggleButton:hover {
+	color: #FC8A84;
 }
 
 #subHeading1, #subHeading2 {
