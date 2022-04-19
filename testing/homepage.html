@@ -16,7 +16,7 @@
 	<button class="material-icons" id=clearButton onclick="clearInput()">close</button>
 	<button class="material-icons" id=searchButton onclick="search()">search</button>
 	</div>
-	<button id=toggleContainer title="Switch Engine" onclick="toggleEngine()"><span id=toggleEngine></span><span id=toggleBrief></span></button>
+	<button id=toggleContainer><span id=toggleEngine></span><button onclick="toggleEngine()" class="material-icons">loop</button></button>
 
 	<!--div class=dividercontainer>
 	<span class="material-icons dividerx1" style="font-style: bold;">close</span><hr><span class="material-icons dividerx2">close</span><hr><span class="material-icons dividerx3">close</span>
@@ -67,7 +67,7 @@ Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles th
 		activeEngine = allEngines[x];
 		document.getElementById('toggleEngine').style.color = activeEngine.color;
 		document.getElementById('toggleEngine').innerHTML = activeEngine.name;
-		document.getElementById('toggleBrief').innerHTML = activeEngine.brief;
+		document.getElementById('toggleEngine').title = activeEngine.brief;
 		url = activeEngine.url; 
 		document.getElementById('searchInput').focus(); };
 

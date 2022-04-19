@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Outfit|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Outfit|League+Gothic|Readex+Pro");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 /*removes the unattractive defaults*/
@@ -13,11 +13,9 @@ body {
 	background: #171B25;
 	padding: 3.28em;
 	width: 55%;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 2px;
 	box-shadow:
-		0px 3px 10px rgba(255,255,255, 0.5),
-		0px 3px 10px blue,
-		0px 3px 10px pink
+		0px 10px 20px rgba(0,0,0, 0.75)
 		;
 	position: absolute;
 	top: 50%;
@@ -92,18 +90,12 @@ body {
 	border: 1px solid pink;
 }
 #toggleEngine {
-	font: normal 600 22px "Outfit", sans-serif;
+	font: normal normal 26px "Readex Pro", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
 	line-height: 1.55em;
 	margin-left: 0.1em;
 }
-#toggleBrief {
-	font: normal normal 17.5px "Outfit", sans-serif;
-	line-height: 1.55em;
-	color: #E4E4E4;
-}
-#toggleContainer:hover {
-	cursor: crosshair;
+#toggleButton {
 }
 
 #subHeading1, #subHeading2 {
