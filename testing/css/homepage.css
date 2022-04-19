@@ -10,7 +10,7 @@ img {
 
 body {
 	background: #171B25;
-	line-height: 1.55em;
+	line-height: 1.35em;
 }
 
 .mainContainer {
@@ -89,6 +89,8 @@ body {
 
 .noSearchbar {
 	display: flex;
+	margin-top: 4.5%;
+	height: 150px;
 }
 
 #toggleContainer {
@@ -116,7 +118,7 @@ body {
 	color: #EFEFEF;
 	font: normal normal 22px "Material Icons", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
-	display: inline;
+	margin-top: 6px;
 }
 
 #toggleButton { 
@@ -129,85 +131,26 @@ body {
 	color: #FC8A84;
 }
 
-.bookmarks {
-	width: 100%;
+.heading {
+	color: #EFEFEF;
+	font: normal normal 19px "Outfit", sans-serif;
 }
 
-#subHeading1, #subHeading2 {
-	font: normal normal 25px "Oswald", sans-serif;
+.link {
+	color: #EFEFEF;
+	font: normal normal 17px "Outfit", sans-serif;
 }
-#subHeading1 {
-	color: #FBE091;
+
+.bookmarks {
+	width: 100%;
+	display: flex;
+	padding: 0 1em 1em 1em;
 }
-#subHeading2 {
-	color: #A8BEFB;
+.bookmark {
+	width: 25%;
 }
 
 ::selection {
 	color: #171B25;
 	background: rgba(239,239,239,0.85);
-}
-
-.maintext {
-	color: #D9D7D6;
-	font: normal normal 17.5px "Outfit", sans-serif;
-	border: 0px solid pink;
-	border-radius: 5px;
-	background: transparent;
-}
-
-.dividercontainer {
-	display: flex;
-	width: 50%;
-	margin: auto;
-	margin-top: 3%;
-	margin-bottom: -1%;
-}
-hr {
-	border: 0px solid #8AE29D;
-	border-top: 2px solid #8AE29D;
-	border-bottom: 1px solid #8AE29D;
-	background: #8AE29D;
-	font: normal normal 17px "Outfit", sans-serif;
-	width: 37%;
-}
-.dividerx1, .dividerx2, .dividerx3 {
-	font-size: 20px !important;
-	font-weight: 700;
-	-webkit-text-stroke: 1px;
-
-}
-.dividerx1 {
-	color: #FBE091;
-}
-.dividerx2 {
-	color: #FC8A94;
-}
-.dividerx3 {
-	color: #A8BEFB;
-}
-
-
-a {
-	transition: color 0.125s ease-in-out 0s;
-	color: #EFEFEF;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #FC8A94;
-	text-decoration: underline;
-}
-.abouttext {
-	color: #D9D7D6;
-	padding: 1%;
-	font: normal normal 15px "outfit", sans-serif;
-	line-height: 1.4em;
-	margin: -2% 0 0 0;
-}
-.aboutsubheading {
-	font: normal normal 23px "Oswald", sans-serif;
-	padding: 1%;
-	border-radius: 5px 0 0 5px;
-	color: #DA91CE;
 }
