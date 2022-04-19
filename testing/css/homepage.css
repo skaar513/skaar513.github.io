@@ -4,6 +4,10 @@
 /*removes the unattractive defaults*/
 input{outline:none;border:none;}/**/button{border:none;}
 
+img {
+	border: 4px solid #222835;
+}
+
 body {
 	background: #171B25;
 	line-height: 1.55em;
@@ -11,7 +15,7 @@ body {
 
 .mainContainer {
 	background: #171B25;
-	padding: 3.28em;
+	padding: 3.2em;
 	width: 55%;
 	border-radius: 2px;
 	box-shadow:
@@ -21,15 +25,12 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-60%);
+	display: flex;
 }
 
-#subHeading {
-	font: normal bold 24px "Oswald", sans-serif;
-	padding: 0.28em;
-	border-radius: 0.18em 0 0 0.18em;
-	background: #94D6A3;
-	color: #171B25;
-	display: inline-block;
+.noImg {
+	width: 100%;
+	margin-left: 3.25%;
 }
 
 .searchContainer {
@@ -41,10 +42,10 @@ body {
 
 #searchInput {
 	width: 100%;
-	font: normal normal 20px "Outfit", sans-serif;
+	font: normal normal 19.5px "Outfit", sans-serif;
 	padding: 0.7em;
 	background: #222835;
-	border-radius: 4px 0 0 4px;
+	border-radius: 2px 0 0 2px;
 	color: #EFEFEF;
 }
 #searchInput:focus {
@@ -60,23 +61,23 @@ body {
 }
 
 #searchButton {
-	border-radius: 0 4px 4px 0;
-	padding: 0.375em 0.4em 0.375em 0.4em;
+	border-radius: 0 2px 2px 0;
+	padding: 0.375em 0.4em 0.375em 0.42em;
 	margin-left: 2px;
 	color: #EFEFEF;
 	background: #222835;
-	font: normal normal 28px "Material Icons", sans-serif;
-	cursor: pointer;
+	font: normal normal 27px "Material Icons", sans-serif;
 }
 
 #clearButton {
 	padding: 0.15em;
-	font: normal normal 23px "Material Icons", sans-serif;
+	font: normal normal 22px "Material Icons", sans-serif;
 	background: #222835/*rgba(42,49,65,1)*/;
   	color: rgba(239,239,239,0.75);
 	transition: color 0.175s ease-in-out 0s;
 	display: none;
 }
+
 #clearButton:hover {
 	color: rgba(239,239,239,0.9);
 }
@@ -86,18 +87,27 @@ body {
 	color: #171B25;
 }
 
+.noSearchbar {
+	display: flex;
+}
+
 #toggleContainer {
 	border-radius: 2px;
 	background: transparent;
-	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
 }
+
 #toggleEngine {
-	font: normal normal 26px "Readex Pro", sans-serif;
+	font: normal normal 23px "Readex Pro", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
-	line-height: 1.55em;
-	margin-left: 0.1em;
+	display: inline;
+	width: 90%;
+	text-align: center;
 }
-#toggleButton {
+
+#toggleButton, #editButton {
 	border-radius: 50%;
 	border: 2px solid #222835;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
@@ -105,12 +115,22 @@ body {
 	background: #222835;
 	color: #EFEFEF;
 	font: normal normal 22px "Material Icons", sans-serif;
-	display: inline;
 	transition: color 0.125s ease-in-out 0s;
+	display: inline;
 }
 
-#toggleButton:hover {
+#toggleButton { 
+}
+
+#editButton {
+}
+
+#editButton:hover {
 	color: #FC8A84;
+}
+
+.bookmarks {
+	width: 100%;
 }
 
 #subHeading1, #subHeading2 {

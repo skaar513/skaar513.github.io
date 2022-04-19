@@ -10,13 +10,22 @@
 
 <body>
 <div class=mainContainer>
-
+	<img src=imgs/boseman.jpg height=220px />
+	<div class=noImg>
 	<div class=searchContainer>
-	<input id=searchInput placeholder="Search something with ..." autocomplete=off />
+	<input id=searchInput autocomplete=off />
 	<button class="material-icons" id=clearButton onclick="clearInput()">close</button>
 	<button class="material-icons" id=searchButton onclick="search()">search</button>
 	</div>
-	<button id=toggleContainer><span id=toggleEngine></span><button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">loop</button></button>
+	<div class=noSearchbar>
+	<div id=toggleContainer>
+	<button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">loop</button>
+	<button onclick="editEngines()" title="Edit Engines" id=editButton class="material-icons">edit</button>
+	</div>
+	<div class=bookmarks>
+		<p></p>
+	</div>
+	</div>
 
 	<!--div class=dividercontainer>
 	<span class="material-icons dividerx1" style="font-style: bold;">close</span><hr><span class="material-icons dividerx2">close</span><hr><span class="material-icons dividerx3">close</span>
@@ -54,6 +63,7 @@
 Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles through the stored engines
 </p-->
 
+	</div>
 </div>
 </body>
 
@@ -65,10 +75,8 @@ Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles th
 	function toggleEngine() { x = (x == allEngines.length - 1) ? -1:x; 
 		x = x + 1;
 		activeEngine = allEngines[x];
-		document.getElementById('toggleEngine').style.color = activeEngine.color;
 		document.getElementById('toggleButton').style.color = activeEngine.color;
-		document.getElementById('toggleEngine').innerHTML = activeEngine.name;
-		document.getElementById('toggleEngine').title = activeEngine.brief;
+		document.getElementById('searchInput').placeholder = "Search with " + activeEngine.name;
 		url = activeEngine.url; 
 		document.getElementById('searchInput').focus(); };
 
