@@ -118,17 +118,11 @@ body {
 	/*margin: auto; not needed*/
 }
 
-#toggleButton { 
-}
-
-#editButton {
-}
-
-#settingsButton:hover {
+#settingsButton {
 	color: #DA91CE;
 }
 
-#editButton:hover {
+#editButton {
 	color: #82D5EF;
 }
 
