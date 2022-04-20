@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-	<title>Home</title>
+	<title>New Tab</title>
 	<link rel=stylesheet href=css/homepage.css />
-	<link rel=icon href=nixos.svg />
+	<link rel=icon href=imgs/search3.svg />
 	<meta charset=UTF-8 />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -19,29 +19,27 @@
 	</div>
 	<div class=noSearchbar>
 	<div id=toggleContainer>
-	<button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">loop</button>
-	<button onclick="editEngines()" title="Edit Engines" id=editButton class="material-icons">edit</button>
+		<span class=buttonWrapper><button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">loop</button></span>
+		<span class=buttonWrapper><button onclick="editBookmarks()" title="Edit Engines" id=editButton class="material-icons">edit</button></span>
+		<span class=buttonWrapper><button onclick="editSettings()" title="Edit Engines" id=settingsButton class="material-icons">settings</button></span>
 	</div>
 	<div class=bookmarks>
 		<div class="bookmark">
-		<a class=heading>ngns</a>
-		<a href=https://www.w3.org/2009/cheatsheet/ class=link>cheatsheet</a>
-		<a href=https://www.w3.org/2009/cheatsheet/ class=link>cheatsheet</a>
+		<a class="heading heading1">Web</a><br>
+		<a href=https://www.w3.org/2009/cheatsheet/ class=link>apropos</a><br>
+		<a href=https://feathericons.com class=link>feather</a><br>
+		<a href=https://developer.mozilla.org/docs/web class=link>mozilla</a><br>
 		</div>
 		<div class="bookmark">
-		<a class=heading>ngns</a>
-		<a href=https://www.w3.org/2009/cheatsheet/ class=link>cheatsheet</a>
-		<a href=https://www.w3.org/2009/cheatsheet/ class=link>cheatsheet</a>
+		<a class="heading heading2">Movies</a><br>
+		<a href=../index.html class=link>movies</a><br>
+		<a href=https://github.com/kyoz/iquotes/tree/master/quotes class=link>quotes</a><br>
 		</div>
 		<div class="bookmark">
-		<a class=heading>ngns</a>
-		<a href=https://www.w3.org/2009/cheatsheet/ class=link>cheatsheet</a>
-		<a href=https://www.w3.org/2009/cheatsheet/ class=link>cheatsheet</a>
-		</div>
-		<div class="bookmark">
-		<a class=heading>ngns</a>
-		<a href=https://www.w3.org/2009/cheatsheet/ class=link>cheatsheet</a>
-		<a href=https://www.w3.org/2009/cheatsheet/ class=link>cheatsheet</a>
+		<a class="heading heading3">New</a><br>
+		<a href=https://xmpp.org class=link>xmpp</a><br>
+		<a href=https://elkowar.github.io/eww class=link>eww</a><br>
+		<a href=https://videos.lukesmith.xyz class=link>luke</a><br>
 		</div>
 	</div>
 	</div>
@@ -99,7 +97,7 @@ Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles th
 		url = activeEngine.url; 
 		document.getElementById('searchInput').focus(); };
 
-	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F");
+	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F").replace(/:/g,"%3A");
 			let noSpaceVal = realVal.replace(/\s/g, "");
 			{if (noSpaceVal == "") {window.location.reload(false);} else {window.open("https://" + url + realVal, "_self");}
 				}

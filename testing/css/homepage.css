@@ -16,7 +16,7 @@ body {
 .mainContainer {
 	background: #171B25;
 	padding: 3.2em;
-	width: 55%;
+	width: 57%;
 	border-radius: 2px;
 	box-shadow:
 		0px 10px 25px rgba(0,0,0, 0.85)
@@ -30,7 +30,7 @@ body {
 
 .noImg {
 	width: 100%;
-	margin-left: 3.25%;
+	margin-left: 1.5em;
 }
 
 .searchContainer {
@@ -89,27 +89,24 @@ body {
 
 .noSearchbar {
 	display: flex;
-	margin-top: 4.5%;
-	height: 150px;
+	margin-top: 1.5em;
+	height: 148px;
 }
 
 #toggleContainer {
-	border-radius: 2px;
 	background: transparent;
+	height: 90%;
 	margin: auto;
+	display: grid;
+}
+
+/*this wasn't necessarily needed, but kept for extensibility*/
+.buttonWrapper {
 	display: flex;
-	flex-direction: column;
+	align-items: center;
 }
 
-#toggleEngine {
-	font: normal normal 23px "Readex Pro", sans-serif;
-	transition: color 0.125s ease-in-out 0s;
-	display: inline;
-	width: 90%;
-	text-align: center;
-}
-
-#toggleButton, #editButton {
+#toggleButton, #editButton, #settingsButton {
 	border-radius: 50%;
 	border: 2px solid #222835;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
@@ -118,7 +115,7 @@ body {
 	color: #EFEFEF;
 	font: normal normal 22px "Material Icons", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
-	margin-top: 6px;
+	/*margin: auto; not needed*/
 }
 
 #toggleButton { 
@@ -132,22 +129,51 @@ body {
 }
 
 .heading {
-	color: #EFEFEF;
-	font: normal normal 19px "Outfit", sans-serif;
+	font: normal normal 20px "Outfit", sans-serif;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1)/*#ff0*/;
+}
+
+.heading1 {
+	color: #FBE091;
+}
+
+.heading2 {
+	color: #8AE29D;
+}
+
+.heading3 {
+	color: #A8BEFB;
+}
+
+.links {
+	border: 2px solid red;
 }
 
 .link {
-	color: #EFEFEF;
-	font: normal normal 17px "Outfit", sans-serif;
+	color: rgba(239,239,239,0.75);
+	font: normal normal 18px "Outfit", sans-serif;
+	text-decoration: none;
+	transition: color 0.15s ease-in-out 0s;
+}
+
+.link:hover {
+	cursor: default;
+	color: #D9D7D6;
 }
 
 .bookmarks {
 	width: 100%;
 	display: flex;
-	padding: 0 1em 1em 1em;
+	border: 3px solid #222835;
+	border-radius: 2px;
+	background: #222835;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	margin-left: 1.5em;
 }
 .bookmark {
-	width: 25%;
+	width: 33.3%;
+	text-align: center;
+	padding: 0.5em;
 }
 
 ::selection {
