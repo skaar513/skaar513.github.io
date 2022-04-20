@@ -90,7 +90,7 @@ body {
 .noSearchbar {
 	display: flex;
 	margin-top: 1.5em;
-	height: 150px;
+	height: 152px;
 }
 
 #toggleContainer {
@@ -176,6 +176,7 @@ body {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 	margin-left: 1.5em;
 }
+
 .bookmark {
 	width: 33.3%;
 	text-align: center;
