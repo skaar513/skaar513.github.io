@@ -121,8 +121,8 @@ Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles th
 	toggleEngine();
 
 	document.getElementById("searchInput").addEventListener("keydown", event =>
-			{ if (event.keyCode == 13) search();
-			else if (event.keyCode == 9) toggleEngine(); });
+			{ if (event.key == "Enter") search(); // keycode 13
+			else if (event.altKey && event.key == "Tab") toggleEngine(); }); // keycode 9
 
 	document.getElementById("searchInput").addEventListener("input", hideClearButton);
 	function hideClearButton() {
