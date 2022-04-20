@@ -90,7 +90,7 @@ body {
 .noSearchbar {
 	display: flex;
 	margin-top: 1.5em;
-	height: 148px;
+	height: 150px;
 }
 
 #toggleContainer {
@@ -124,8 +124,12 @@ body {
 #editButton {
 }
 
+#settingsButton:hover {
+	color: #DA91CE;
+}
+
 #editButton:hover {
-	color: #FC8A84;
+	color: #82D5EF;
 }
 
 .heading {
@@ -146,12 +150,15 @@ body {
 }
 
 .links {
-	border: 2px solid red;
+	height: calc(85% - 0.5em);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .link {
 	color: rgba(239,239,239,0.75);
-	font: normal normal 18px "Outfit", sans-serif;
+	font: normal normal 17.5px "Outfit", sans-serif;
 	text-decoration: none;
 	transition: color 0.15s ease-in-out 0s;
 }
@@ -164,16 +171,15 @@ body {
 .bookmarks {
 	width: 100%;
 	display: flex;
-	border: 3px solid #222835;
-	border-radius: 2px;
-	background: #222835;
-	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	border: 3px solid rgba(34,40,53,0.5);
+	background: #171B25;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 	margin-left: 1.5em;
 }
 .bookmark {
 	width: 33.3%;
 	text-align: center;
-	padding: 0.5em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 ::selection {
