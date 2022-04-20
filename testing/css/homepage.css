@@ -90,7 +90,7 @@ body {
 .noSearchbar {
 	display: flex;
 	margin-top: 1.5em;
-	height: 152px;
+	height: 154px;
 }
 
 #toggleContainer {
@@ -171,9 +171,9 @@ body {
 .bookmarks {
 	width: 100%;
 	display: flex;
-	border: 3px solid rgba(34,40,53,0.5);
+	border: 3px solid rgba(34,40,53,0.75);
 	background: #171B25;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 0px 3px rgba(0,0,0,0.2) inset;
 	margin-left: 1.5em;
 }
 
