@@ -203,6 +203,7 @@ body {
 
 #desc {
 	color: #EFEFEF;
+	font: normal normal 17.5px "Outfit", sans-serif;
 }
 
 ::selection {
