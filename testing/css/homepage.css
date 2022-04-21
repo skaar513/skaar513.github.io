@@ -18,9 +18,7 @@ body {
 	padding: 3.2em;
 	width: 57%;
 	border-radius: 2px;
-	box-shadow:
-		0px 10px 25px rgba(0,0,0, 0.85)
-		;
+	box-shadow: 0px 10px 25px rgba(0,0,0, 0.85);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -151,7 +149,7 @@ body {
 }
 
 .link {
-	color: rgba(239,239,239,0.75);
+	color: rgba(239,239,239,0.85);
 	font: normal normal 17.5px "Outfit", sans-serif;
 	text-decoration: none;
 	transition: color 0.15s ease-in-out 0s;
@@ -159,7 +157,7 @@ body {
 
 .link:hover {
 	cursor: default;
-	color: #D9D7D6;
+	color: #EFEFEF;
 }
 
 .bookmarks {
@@ -175,6 +173,26 @@ body {
 	width: 33.3%;
 	text-align: center;
 	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#editContainer {
+	background: #171B25;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-60%);
+	box-shadow: 0px 10px 25px rgba(0,0,0, 0.85);
+}
+
+.bookmarkVal {
+}
+
+#editMenu {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid rgba(34,40,53,0.75);
+	background: #222835;
+	box-shadow: 0 0px 1px rgba(0,0,0,1) inset;
 }
 
 ::selection {

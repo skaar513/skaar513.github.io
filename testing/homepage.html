@@ -55,68 +55,24 @@
 		</div>
 	</div>
 	</div>
-
-	<!--div class=dividercontainer>
-	<span class="material-icons dividerx1" style="font-style: bold;">close</span><hr><span class="material-icons dividerx2">close</span><hr><span class="material-icons dividerx3">close</span>
-	</div>
-
-	<div>
-	<h2 id=subHeading>Bookmarks</h2>
-	<ul>
-
-	<h3 id=subHeading1>Webpages</h3>
-	<ul class=maintext>
-	<li><a href=index.html>Great Movies</a></li>
-	<li><a href=https://github.com>Github Repositories</a></li>
-	</ul>
-
-	<h3 id=subHeading2>Manual</h3>
-	<ul class=maintext>
-	<li><a href=https://github.com/kyoz/iquotes/tree/master/quotes>Quotes</a></li>
-	<li><a href=https://elkowar.github.io/eww>Eww - ElKowar's Wacky Widgets</a></li>
-	<li><a href=https://gnu.org>GNU</a></li>
-	</ul>
-
-	</ul>
-
-	<div class=dividercontainer-->
-	<!--i class=dividerx1>⨯</i><hr><i class=dividerx2>⨯</i><hr><i class=dividerx3>⨯</i-->
-	<!--span class="material-icons dividerx1">close</span><hr><span class="material-icons dividerx2">close</span><hr><span class="material-icons dividerx3">close</span>
-	</div>
-
-	</div>
-
-<h2 class=aboutsubheading>note</h2>
-<p class=abouttext>
-<span class=hideonphone>Tip: Pressing Alt+Tab while the search box is focused cycles through the stored engines</span><br>
-Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles through the stored engines
-</p-->
-
 	</div>
 </div>
+<!--div id=editContainer>
+		<div id=editMenu>
+			<input id=book placeholder=bookmark />
+			<input id=book2 placeholder=bookmark />
+			<input id=book3 placeholder=bookmark />
+			<input id=book4 placeholder=bookmark />
+		</div>
+</div-->
 </body>
 
-<script src=json/homepage.js></script>
+<script src=js/allEngines.js></script>
+<script src=js/bookmarks.js></script>
+<script src=js/functions.js></script>
+
 <script>
-	var activeEngine, url;
-	var x = -1;
-
-	function toggleEngine() { x = (x == allEngines.length - 1) ? -1:x; 
-		x = x + 1;
-		activeEngine = allEngines[x];
-//		document.getElementById('toggleButton').style.color = activeEngine.color;
-		document.getElementById('searchInput').placeholder = "Search with " + activeEngine.name;
-		url = activeEngine.url; 
-		document.getElementById('searchInput').focus(); };
-
-	function search() {let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F").replace(/:/g,"%3A");
-			let noSpaceVal = realVal.replace(/\s/g, "");
-			{if (noSpaceVal == "") {window.location.reload(false);} else {window.open("https://" + url + realVal, "_self");}
-				}
-				  };
-	function clearInput() { document.getElementById("searchInput").value = "";
-				document.getElementById('searchInput').focus();
-				hideClearButton(); };
+// created functions : toggleEngine(), search(), clearInput(), editBookmarks(), hideClearButton()
 
 	toggleEngine();
 
@@ -125,11 +81,6 @@ Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles th
 			else if (event.altKey && event.key == "Tab") toggleEngine(); }); // keycode 9
 
 	document.getElementById("searchInput").addEventListener("input", hideClearButton);
-	function hideClearButton() {
-			document.getElementById("clearButton").style.display = (document.getElementById("searchInput").value == "") ? "none":"inline";
-		};
 
-// Reduces the length of inputbox placeholder if device is narrow
-document.getElementById("searchInput").placeholder = (window.matchMedia("(max-width: 5in)").matches) ? "Search with ...":document.getElementById("searchInput").placeholder;
 </script>
 </html>
