@@ -118,14 +118,14 @@ body {
 	/*margin: auto; not needed*/
 }
 
-#settingsButton {
+/*#settingsButton {
 	color: #82D5EF;
 }
 
 #editButton {
 	color: #DA91CE;
 }
-
+*/
 .heading {
 	font: normal normal 20px "Outfit", sans-serif;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1)/*#ff0*/;

@@ -104,7 +104,7 @@ Tip: Clicking on the Engine's info <span class=hideonphone>also</span> cycles th
 	function toggleEngine() { x = (x == allEngines.length - 1) ? -1:x; 
 		x = x + 1;
 		activeEngine = allEngines[x];
-		document.getElementById('toggleButton').style.color = activeEngine.color;
+//		document.getElementById('toggleButton').style.color = activeEngine.color;
 		document.getElementById('searchInput').placeholder = "Search with " + activeEngine.name;
 		url = activeEngine.url; 
 		document.getElementById('searchInput').focus(); };
