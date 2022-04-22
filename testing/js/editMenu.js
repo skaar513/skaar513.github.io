@@ -1,4 +1,4 @@
-toggleEngine()
+toggleEngine();
 let testLink = document.getElementById("link1");
 document.getElementById("desc").innerHTML = testLink.href + " - " + testLink.innerHTML;
 document.getElementById("desc2").innerHTML = allEngines[0].name + "\n" + allEngines[1].name + allEngines[2].name;
