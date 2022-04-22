@@ -24,7 +24,7 @@ body {
 	left: 50%;
 	transform: translate(-50%,-60%);
 	display: flex;
-	transition: visibility 0.1s linear 0s, opacity 0.1s linear 0s;
+	transition: visibility 0.15s linear 0s, opacity 0.15s linear 0s;
 }
 
 .noImg {
@@ -176,9 +176,9 @@ body {
 	padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
-#editContainer {
-	visibility: hidden;
-	opacity: 0;
+#editContainer, #editContainer2 {
+	display: none;
+	opacity: 1;
 	background: #171B25;
 	position: absolute;
 	left: 50%;
@@ -186,7 +186,9 @@ body {
 	transform: translate(-50%,-60%);
 	box-shadow: 0px 10px 25px rgba(0,0,0, 0.85);
 	padding: 3em;
-	transition: visibility 0.1s linear 0s, opacity 0.1s linear 0s;
+	/*transition: display 0.15s linear 0s, opacity 0.15s linear 0s;*/ /*animation overwrites this*/
+	animation-name: slide;
+	animation-duration: 0.225s;
 }
 
 .bookmarkVal {
@@ -194,7 +196,7 @@ body {
 
 #editMenu {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	border: 3px solid rgba(34,40,53,0.75);
 	background: #222835;
 	box-shadow: 0 0px 1px rgba(0,0,0,1) inset;
@@ -204,6 +206,16 @@ body {
 #desc {
 	color: #EFEFEF;
 	font: normal normal 17.5px "Outfit", sans-serif;
+}
+
+.editContainerButtons {
+	margin-top: 0.75em;
+}
+
+/*animation for editContainers; "fade" animation for .mainContainer is done using transition alone*/
+@keyframes slide {
+	from { transform: translate(-50%,-52%); opacity: 0;}
+	to { transform: translate(-50%,-60%); opacity: 1;}
 }
 
 ::selection {

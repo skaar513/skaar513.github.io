@@ -20,7 +20,8 @@
 	<div class=noSearchbar>
 	<div id=toggleContainer>
 		<span class=buttonWrapper><button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">loop</button></span>
-		<span class=buttonWrapper><button onclick="editBookmarks()" title="Edit Bookmarks" id=editButton class="material-icons">edit</button></span>
+		<span class=buttonWrapper><button onclick="editBookmarks()" title="Edit Bookmarks" id=editButton class="material-icons">edit
+			</button></span>
 		<span class=buttonWrapper><button onclick="editSettings()" title="Edit Engines" id=settingsButton class="material-icons">settings</button></span>
 	</div>
 	<div class=bookmarks>
@@ -61,7 +62,21 @@
 		<div id=editMenu>
 			<p id=desc></p>
 		</div>
+		<div id=editMenu>
+			<p id=desc></p>
+		</div>
+		<div class=editContainerButtons>
 		<span class=decoyButtonContainer><button onclick="backToHome()" title="Return" id=settingsButton class="material-icons">done</button></span>
+		</div>
+</div>
+
+<div id=editContainer2>
+		<div id=editMenu>
+			<p id=desc2></p>
+		</div>
+		<div class=editContainerButtons>
+		<span class=decoyButtonContainer><button onclick="backToHome2()" title="Return" id=settingsButton class="material-icons">done</button></span>
+		</div>
 </div>
 </body>
 
@@ -72,8 +87,6 @@
 
 <script>
 // created functions : toggleEngine(), search(), clearInput(), editBookmarks(), hideClearButton()
-
-	toggleEngine();
 
 	document.getElementById("searchInput").addEventListener("keydown", event =>
 			{ if (event.key == "Enter") search(); // keycode 13

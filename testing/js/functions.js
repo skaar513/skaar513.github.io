@@ -17,9 +17,6 @@
 				document.getElementById('searchInput').focus();
 				hideClearButton(); };
 
-	function editBookmarks() { let editContainer = document.getElementById("editContainer");
-				   document.getElementById("book").placeholder = "hi, i work" ;};
-
 	function hideClearButton() {
 			document.getElementById("clearButton").style.display = (document.getElementById("searchInput").value == "") ? "none":"inline";
 		};
