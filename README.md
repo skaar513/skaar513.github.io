@@ -1,15 +1,24 @@
-# Movies Webpage
+# My webpages
+This repo is a collection of my web pages :
+
+### Startpage
+This is the main page I've been working on (for personal use, ofcourse). It's src is in testing/, but is not yet complete.
+
+Earlier I was going to make a front-end to edit the basic settings, but it turns out that permanent changes to offline files are not possible with js in any way (however, it is possible if the page is a browser extension) (This is quite apparent why, but I was too occupied with shell scripting)
+BTW, It is actually possible to write to files with js, but it is stored in browser cache, and would make the edit buttons futile.
+PS - Feel free to skip ahead, javascript is frustrating.
+
+### Great Movies
 A simple webpage listing out some good and pointful movies that I have seen (or will see).
-<p></p>
+
 Any suggetion for the page, or additions to the list itself, would be greatly appreciated
 
 ## Links
 - <a href=https://skaar513.github.io>movies</a>
-- <a href=https://skaar513.github.io/homepage.html>startpage</a>
+- old <a href=https://skaar513.github.io/homepage.html>startpage</a>
 
 ## Issues
-<p>1. The background doesn't load properly when the webpage is not as long as the height of the device. </p
-<p>2. The heading font does not render properly on gecko based browsers (like firefox).<br>Font settings in about:config needs to be edited to make it chromium/brave-like, but there's no documentation.</p>
+<p>1. Furryfox has some issues with my page.</p>
 
 ## References
 Some help from 
