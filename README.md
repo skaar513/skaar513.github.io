@@ -2,7 +2,7 @@
 This repo is a collection of my web pages :
 
 ### Startpage
-This is the main page I've been working on (for personal use, ofcourse). It's src is in testing/, but is not yet complete.<br><br>
+This is the main page I've been working on (for personal use). It's src is in testing/, but is not yet complete.<br><br>
 Earlier I was going to make a front-end to edit the basic settings, but it turns out that permanent changes to offline files are not possible with js in any way (however, it is possible if the page is a browser extension) (This is quite apparent why, but I was too occupied with shell scripting).<br>
 BTW, It is actually possible to write to files with js, but it is temporarily stored in browser cache, and would make the edit buttons meaningless.<br><br>
 PS - Feel free to skip ahead, javascript is frustrating.
