@@ -183,7 +183,7 @@ body {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-60%);
+	transform: translate(-50%,-57%);
 	box-shadow: 0px 10px 25px rgba(0,0,0, 0.85);
 	padding: 2em;
 	/*transition: display 0.15s linear 0s, opacity 0.15s linear 0s;*/ /*animation overwrites this*/
@@ -217,7 +217,7 @@ body {
 /*animation for editContainers; "fade" animation for .mainContainer is done using transition alone*/
 @keyframes slide {
 	from { transform: translate(-50%,-52%); opacity: 0;}
-	to { transform: translate(-50%,-60%); opacity: 1;}
+	to { transform: translate(-50%,-57%); opacity: 1;}
 }
 
 ::selection {
