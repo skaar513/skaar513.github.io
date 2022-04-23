@@ -16,11 +16,10 @@ Don't mind the eyecandy look of it, new design is in works.
 - new <a href=https://skaar513.github.io/testing/homepage.html>startpage</a>
 
 ## Issues
-<p>1. Furryfox has some issues with my pages. I'll try to debug them when I get some free time.</p>
+1. Furryfox has some issues with my pages. I'll try to debug them when I get some free time.
 
 ## References
-Some help from 
+Thanks to
 <a href=https://github.com/obliviousofcraps/>obliviousofcraps</a> (for the unusably eye-candy look), 
 <a href=https://jgthms.com/web-design-in-4-minutes>jgthms</a> (for some initial basic tips) and 
 <a href=https://lukesmith.xyz>lukesmith</a>
-was taken
