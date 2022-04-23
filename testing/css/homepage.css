@@ -177,6 +177,7 @@ body {
 	display: flex;
 	font: normal normal 16.5px "Outfit", sans-serif;
   	color: rgba(239,239,239,0.95);
+	padding-bottom: 0.25em;
 }
 
 .bookmark, .moreBookmark {
@@ -205,7 +206,7 @@ body {
 	/*transition: display 0.15s linear 0s, opacity 0.15s linear 0s;*/ /*animation overwrites this*/
 	animation-name: slide;
 	animation-duration: 0.175s;
-	width: 25%;
+	width: 20%;
 }
 
 .editContainerButtons {
