@@ -20,8 +20,8 @@
 	<div class=noSearchbar>
 	<div id=toggleContainer>
 		<span class=buttonWrapper><button onclick="toggleEngine()" title="Toggle Engine" id=toggleButton class="material-icons">loop</button></span>
-		<span class=buttonWrapper><button onclick="editBookmarks()" title="Edit Bookmarks" id=editButton class="material-icons">bookmark_outline</button></span>
-		<span class=buttonWrapper><button onclick="editSettings()" title="Edit Engines" id=settingsButton class="material-icons-round">more_horiz</button></span>
+		<span class=buttonWrapper><button onclick="editBookmarks()" title="More Bookmarks" id=editButton class="material-icons">bookmark_outline</button></span>
+		<span class=buttonWrapper><button onclick="editSettings()" title="Source Code" id=settingsButton class="material-icons-round">code</button></span>
 	</div>
 	<div class=bookmarks>
 		<div class="bookmark">
@@ -58,45 +58,29 @@
 	</div>
 </div>
 <div id=editContainer>
-		<div class=editMenu>
+	<div class=moreBookmarks>
+		<div class="moreBookmark">
+		<a class="heading moreHeading1">Web</a><br>
+		<div class=links>
+		<div>
+		<a href=https://www.w3.org/2009/cheatsheet/ id=link1 class=link>apropos</a><br>
+		<a href=https://feathericons.com class=link>feather</a><br>
+		<a href=https://developer.mozilla.org/docs/web class=link>mozilla</a><br>
 		</div>
-		<div class=editMenu>
 		</div>
+		</div>
+		<div class="moreBookmark">
+		<a class="heading moreHeading2">Movies</a><br>
+		<div class=links>
+		<div>
+		<a href=../index.html class=link>movies</a><br>
+		<a href=https://github.com/kyoz/iquotes/tree/master/quotes class=link>quotes</a><br>
+		</div>
+		</div>
+		</div>
+	</div>
 		<div class=editContainerButtons>
-		<span class=decoyButtonContainer><button onclick="backToHome()" title="Return" id=settingsButton class="material-icons">done</button></span>
-		</div>
-</div>
-
-<div id=editContainer2>
-		<div class=editMenu>
-			<div class=engine>
-				<a class=engineName id=engine0Name></a><br>
-				<div class=editInfo>
-				<a id=engine0Preposition></a><br>
-				<a id=engine0Url></a><br>
-				</div>
-			</div>
-		</div>
-		<div class=editMenu>
-			<div class=engine>
-				<a class=engineName id=engine1Name></a><br>
-				<div class=editInfo>
-				<a id=engine1Preposition></a><br>
-				<a id=engine1Url></a><br>
-				</div>
-			</div>
-		</div>
-		<div class=editMenu>
-			<div class=engine>
-				<a class=engineName id=engine2Name></a><br>
-				<div class=editInfo>
-				<a id=engine2Preposition></a><br>
-				<a id=engine2Url></a><br>
-				</div>
-			</div>
-		</div>
-		<div class=editContainerButtons>
-		<span class=decoyButtonContainer><button onclick="backToHome2()" title="Return" id=settingsButton class="material-icons">done</button></span>
+		<span class=decoyButtonContainer><button onclick="backToHome()" title="Return" id=settingsButton class="material-icons">arrow_back</button></span>
 		</div>
 </div>
 </body>

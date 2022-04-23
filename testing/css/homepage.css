@@ -117,14 +117,6 @@ body {
 	/*margin: auto; not needed*/
 }
 
-/*#settingsButton {
-	color: #82D5EF;
-}
-
-#editButton {
-	color: #DA91CE;
-}
-*/
 .heading {
 	font: normal normal 20px "Outfit", sans-serif;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1)/*#ff0*/;
@@ -134,7 +126,15 @@ body {
 	color: #FBE091;
 }
 
+.moreHeading1 {
+	color: #FBE091;
+}
+
 .heading2 {
+	color: #8AE29D;
+}
+
+.moreHeading2 {
 	color: #8AE29D;
 }
 
@@ -170,54 +170,54 @@ body {
 	margin-left: 1.5em;
 }
 
-.bookmark {
-	width: 33.3%;
+.moreBookmarks {
+	border: 3px solid rgba(34,40,53,0.75);
+	background: #222835;
+	box-shadow: 0 0px 1px rgba(0,0,0,1) inset;
+	display: flex;
+	font: normal normal 16.5px "Outfit", sans-serif;
+  	color: rgba(239,239,239,0.95);
+}
+
+.bookmark, .moreBookmark {
 	text-align: center;
 	padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
-#editContainer, #editContainer2 {
+.bookmark {
+	width: 33.3%;
+}
+
+.moreBookmark {
+	width: 50%;
+}
+
+#editContainer {
 	display: none;
 	opacity: 1;
 	background: #171B25;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-55%);
+	transform: translate(-50%,-60%);
 	box-shadow: 0px 10px 25px rgba(0,0,0, 0.85);
 	padding: 2em;
 	/*transition: display 0.15s linear 0s, opacity 0.15s linear 0s;*/ /*animation overwrites this*/
 	animation-name: slide;
 	animation-duration: 0.175s;
-	width: 35%;
-}
-
-.engine {
-	margin: 0.5em;
-}
-
-.engineName {
-	font: normal normal 17.5px "Outfit", sans-serif;
-}
-
-.editMenu {
-	border: 3px solid rgba(34,40,53,0.75);
-	background: #222835;
-	box-shadow: 0 0px 1px rgba(0,0,0,1) inset;
-	padding: 0.25em;
-	margin: 1.25em;
-	font: normal normal 16.5px "Outfit", sans-serif;
-  	color: rgba(239,239,239,0.95);
+	width: 25%;
 }
 
 .editContainerButtons {
 	margin-top: 0.75em;
+	display: flex;
+	justify-content: center;
 }
 
 /*animation for editContainers; "fade" animation for .mainContainer is done using transition alone*/
 @keyframes slide {
 	from { transform: translate(-50%,-52%); opacity: 0;}
-	to { transform: translate(-50%,-55%); opacity: 1;}
+	to { transform: translate(-50%,-60%); opacity: 1;}
 }
 
 ::selection {
