@@ -185,27 +185,29 @@ body {
 	top: 50%;
 	transform: translate(-50%,-60%);
 	box-shadow: 0px 10px 25px rgba(0,0,0, 0.85);
-	padding: 3em;
+	padding: 2em;
 	/*transition: display 0.15s linear 0s, opacity 0.15s linear 0s;*/ /*animation overwrites this*/
 	animation-name: slide;
-	animation-duration: 0.225s;
+	animation-duration: 0.175s;
+	width: 35%;
 }
 
-.bookmarkVal {
+.engine {
+	margin: 0.5em;
 }
 
-#editMenu {
-	display: flex;
-	flex-direction: row;
+.engineName {
+	font: normal normal 17.5px "Outfit", sans-serif;
+}
+
+.editMenu {
 	border: 3px solid rgba(34,40,53,0.75);
 	background: #222835;
 	box-shadow: 0 0px 1px rgba(0,0,0,1) inset;
-	padding: 0.5em;
-}
-
-#desc {
-	color: #EFEFEF;
-	font: normal normal 17.5px "Outfit", sans-serif;
+	padding: 0.25em;
+	margin: 1.25em;
+	font: normal normal 16.5px "Outfit", sans-serif;
+  	color: rgba(239,239,239,0.95);
 }
 
 .editContainerButtons {
