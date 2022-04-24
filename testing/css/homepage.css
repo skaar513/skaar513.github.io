@@ -243,9 +243,9 @@ body {
 
 @media screen and (max-width: 8.2in) {
 	.mainContainer {
-		width: 85%;
+		width: 82%;
 		transform: translate(-50%,-60%);
-		padding: 2.8em;
+		padding: 2.85em;
 	}
 }
 
@@ -253,26 +253,24 @@ body {
 	img {
 		display: none;
 	}
+
+	.noImg {
+		margin-left: 0;
+	}
+
 	.mainContainer {
-		width: 85%;
+		width: 65%;
 		transform: translate(-50%,-60%);
-		padding: 2.2em;
+		padding: 2.5em;
 	}
 }
 
-@media screen and (max-width: 5in) {
-	img {
-		display: none;
-	}
-
+@media screen and (max-width: 5.75in) {
 	.mainContainer {
-		width: 100%;
+		width: 85%;
+		border: 1px solid pink;
 		box-shadow: none;
 		transform: translate(-50%,-60%);
-	}
-
-	* {
-		padding: none !important;
-		margin: none !important;
+		padding: 2.25em;
 	}
 }
