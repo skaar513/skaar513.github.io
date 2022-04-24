@@ -154,7 +154,7 @@ body {
 }
 
 .link {
-	color: rgba(239,239,239,0.9);
+	color: rgba(239,239,239,0.875);
 	font: normal normal 17.5px "Outfit", sans-serif;
 	text-decoration: none;
 	transition: color 0.125s ease-in-out 0s;
