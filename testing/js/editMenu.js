@@ -13,5 +13,5 @@ function backToHome() {
 }
 
 function editSettings() {
-	window.open("https://github.com/skaar513/skaar513.github.io", "_blank")
+	window.open("https://github.com/skaar513/skaar513.github.io", "_self")
 }
