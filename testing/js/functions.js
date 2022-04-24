@@ -8,7 +8,7 @@
 		activeEngine = allEngines[x];
 		document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
 
-		cssTemplateString = '#toggleButton:hover{color:' + activeEngine.color + ';}';
+		cssTemplateString = '#toggleButton:hover{color:' + activeEngine.color + ';} #toggleButton{color:' + activeEngine.color + ';}';
 		styleTag.innerHTML = cssTemplateString;
 		document.head.insertAdjacentElement('beforeend', styleTag);
 

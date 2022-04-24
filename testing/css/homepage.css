@@ -111,14 +111,18 @@ body {
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
 	padding: 0.25em;
 	background: #222835;
-	color: #EFEFEF;
+	/*color: #EFEFEF;*/
 	font: normal normal 22px "Material Icons", sans-serif;
 	transition: color 0.125s ease-in-out 0s;
 	/*margin: auto; not needed*/
 }
 
-#toggleButton:hover, #editButton:hover, #settingsButton:hover {
-	color: #8AE29D;
+#editButton {
+	color: hsl(224,91%,82%);
+}
+
+#settingsButton {
+	color: hsl(133,50%,73%);
 }
 
 .heading {
@@ -131,7 +135,7 @@ body {
 }
 
 .moreHeading1 {
-	color: #FBE091;
+	color: #FC8A94;
 }
 
 .heading2 {
@@ -139,11 +143,11 @@ body {
 }
 
 .moreHeading2 {
-	color: #8AE29D;
+	color: #DA91CE;
 }
 
 .heading3 {
-	color: #A8BEFB;
+	color: #82D5EF;
 }
 
 .links {
