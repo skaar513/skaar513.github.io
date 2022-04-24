@@ -237,5 +237,42 @@ body {
 @media screen and (max-width: 9.5in) {
 	.mainContainer {
 		width: 75%;
+		transform: translate(-50%,-60%);
+	}
+}
+
+@media screen and (max-width: 8.2in) {
+	.mainContainer {
+		width: 85%;
+		transform: translate(-50%,-60%);
+		padding: 2.8em;
+	}
+}
+
+@media screen and (max-width: 7.2in) {
+	img {
+		display: none;
+	}
+	.mainContainer {
+		width: 85%;
+		transform: translate(-50%,-60%);
+		padding: 2.2em;
+	}
+}
+
+@media screen and (max-width: 5in) {
+	img {
+		display: none;
+	}
+
+	.mainContainer {
+		width: 100%;
+		box-shadow: none;
+		transform: translate(-50%,-60%);
+	}
+
+	* {
+		padding: none !important;
+		margin: none !important;
 	}
 }
