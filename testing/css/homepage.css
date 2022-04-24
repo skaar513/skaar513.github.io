@@ -239,12 +239,20 @@ body {
 		width: 75%;
 		transform: translate(-50%,-60%);
 	}
+
+	#editContainer {
+		width: 28%;
+	}
 }
 
 @media screen and (max-width: 8.2in) {
 	.mainContainer {
 		width: 82%;
 		padding: 2.85em;
+	}
+
+	#editContainer {
+		width: 30%;
 	}
 }
 
@@ -261,6 +269,10 @@ body {
 		width: 65%;
 		padding: 2.5em;
 	}
+
+	#editContainer {
+		width: 32%;
+	}
 }
 
 @media screen and (max-width: 5.75in) {
@@ -269,6 +281,11 @@ body {
 		box-shadow: none;
 		padding: 2.25em;
 	}
+
+	#editContainer {
+		width: 45%;
+	}
+}
 
 @media screen and (max-width: 4.3in) {
 	.mainContainer {
@@ -283,6 +300,10 @@ body {
 
 	.bookmarks {
 		margin-left: 1em;
+	}
+
+	#editContainer {
+		width: 58%;
 	}
 }
 
@@ -309,5 +330,9 @@ body {
 	.buttonWrapper {
 		margin-left: 0.8em;
 		margin-right: 0.8em;
+	}
+
+	#editContainer {
+		width: 65%;
 	}
 }
