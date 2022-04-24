@@ -1,10 +1,17 @@
 	var activeEngine;
 	var x = -1;
+	var cssTemplateString;
+	var styleTag = document.createElement("style");
 
 	function toggleEngine() { x = (x == allEngines.length - 1) ? -1:x; 
 		x = x + 1;
 		activeEngine = allEngines[x];
 		document.getElementById('searchInput').placeholder = "Search " + activeEngine.preposition + " " + activeEngine.name;
+
+		cssTemplateString = '#toggleButton:hover{color:' + activeEngine.color + ';}';
+		styleTag.innerHTML = cssTemplateString;
+		document.head.insertAdjacentElement('beforeend', styleTag);
+
 		document.getElementById('searchInput').focus(); };
 
 	function search() { let realVal = document.getElementById('searchInput').value.replace("%","%25").replace(/#/g,"%23").replace(/&/g,"%26").replaceAll("+","%2B").replace("/","%2F").replace("?","%3F").replace("=","%3d").replace("_","%5F").replace(/:/g,"%3A");

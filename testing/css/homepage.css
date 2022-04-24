@@ -117,6 +117,10 @@ body {
 	/*margin: auto; not needed*/
 }
 
+#toggleButton:hover, #editButton:hover, #settingsButton:hover {
+	color: #8AE29D;
+}
+
 .heading {
 	font: normal normal 20px "Outfit", sans-serif;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1)/*#ff0*/;
@@ -150,15 +154,15 @@ body {
 }
 
 .link {
-	color: rgba(239,239,239,0.85);
+	color: rgba(239,239,239,0.9);
 	font: normal normal 17.5px "Outfit", sans-serif;
 	text-decoration: none;
-	transition: color 0.15s ease-in-out 0s;
+	transition: color 0.125s ease-in-out 0s;
 }
 
 .link:hover {
 	cursor: default;
-	color: #EFEFEF;
+	color: #FEFEFE;
 }
 
 .bookmarks {
