@@ -233,3 +233,9 @@ body {
 	color: #171B25;
 	background: rgba(239,239,239,0.85);
 }
+
+@media screen and (max-width: 9.5in) {
+	.mainContainer {
+		width: 75%;
+	}
+}
